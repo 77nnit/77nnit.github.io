@@ -8,3 +8,6 @@ sass:
   style: compressed
   sourcemap: development
 # possible values: nested expanded compact compressed
+
+plugins:
+  - jekyll-last-modified

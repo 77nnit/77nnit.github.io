@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="it" prefix="og: https://ogp.me/ns#">
+  <head>
+    <title>Controllo hash da menu contestuale</title>  
+    <link rel="stylesheet" href="https://77nn.it/assets/css/styles.css">
+    <link rel="preload" as="font" href="https://77nn.it/assets/css/fonts/5by7.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://77nn.it/assets/css/fonts/Now-ExtraLight.otf" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="https://77nn.it/assets/css/fonts/Now-Medium.otf" type="font/otf" crossorigin="anonymous">
+  
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="description" content="Come automatizzare la verifica su Windows di un checksum di un file scaricato attraverso il menu contestuale utilizzando Powershell e modificando il registro.">
+    <meta name="keywords" content="FOSS, Powershell, Hash, Checksum, Windows, Data Integrity, File, SHA-256">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- MICROFORMATS METADATA -->
+    <meta property="og:title" content="Controllo hash da menu contestuale" />
+    <meta property="og:description" content="Come automatizzare la verifica su Windows di un checksum di un file scaricato attraverso il menu contestuale utilizzando Powershell e modificando il registro." />
+    <meta property="og:image" content="https://77nn.it/assets/images/misc/ScriptPowershell.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://77nn.it/2023/05/01/Verifica-hash-file-scaricati.html" /> 
+    <meta property="og:site_name" content="77nn.it" />
+    <meta property="article:author" content ="https://77nn.it/autore.html">
+    <meta property="article:tag" content = "FOSS, Powershell, Hash, Checksum, Windows, Data Integrity, File, SHA-256">
+    <meta property="article:section" content = "tech">
+    <meta property="profile:first_name" content="Michele" />
+    <meta property="profile:last_name" content="Brami" />
+    <meta property="profile:username" content="TiTiNoNero" /> 
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- LINK TAGS -->
+    <link rel="alternate" type="application/rss+xml" href="https://77nn.it/feed.xml" />
+    <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+    <link rel="icon" href="/assets/images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/images/icon.png">
+    <link rel="canonical" href="https://77nn.it/2023/05/01/Verifica-hash-file-scaricati.html" />
+  </head>
+
+  <body>
+    <time class="dt-modified" datetime="2023-05-07T11:57:54+02:00" itemprop="dateModified"></time>
+    <div class="overflow"><header>
+<div class="header">
+    <div class= "siteTitle">
+        77nn.it
+    </div>
+    <div class= "siteDescription">
+        <p>TiTiNoNero dice cose<span class="blink">_</span></p>
+    </div>
+<div class= "siteTitle">
+
+    </div>
+</div>
+<div  class= "announcements" >
+       <p>Blog su social, scienza, tecnologia, etica e privacy. Buona lettura!</p>
+    </div>
+</header>
+ <nav class="menucontainer">
+    <a href="/"  class="menuitem" tabindex ="0">
+        <img src= /assets/images/home.svg class="menuicon" alt="Pixelated-style icon representing a home with pointy roof"/>
+        <div class="menucaption">Home</div>
+    </a>
+    <a href="/blog.html"  class="menuitem" tabindex ="0">
+        <img src= /assets/images/blog.svg class="menuicon" alt="Pixelated-style icon representing a screen with some text on it"/>
+        <div class="menucaption">Blog</div>
+    </a>
+    <a href="/manifesto.html"  class="menuitem" tabindex ="0">
+        <img src= /assets/images/about.svg class="menuicon" alt="Pixelated-style icon representing a circled letter 'i' as in 'info'"/>
+        <div class="menucaption">Info</div>
+    </a>
+    <span class="menuitem void" tabindex="-1"></span>
+</nav>                       
+
+      <div class="pagecontainer">
+        <div class="content">  <main>
+  <article class="h-entry e-content">
+    <h1 class="p-name">Controllo hash da menu contestuale</h1>
+    <div class="post-meta">
+      <div class="meta">
+        <time class="post-date dt-published">2023-05-01</time>
+      </div>
+      <div class="meta">  
+        <span class ="tag blue p-category"> tech </span>  
+      </div>
+      <div class="meta">
+        <span>~5 min.</span>
+      </div>
+      <div class ="meta">
+        <span><a rel="bookmark" href="https://77nn.it" title="" style="font-size: 0.9em;">PERMALINK</a></span>
+      </div>
+     </div>
+    <p>Molti <em>publisher</em> di software <strong>FOSS</strong> offrono la possibilità di verificare l’integrità dei pacchetti software scaricati dai loro siti web. Questa è anche una comune pratica di <strong>Data Integrity</strong> adottata nell’Industria per garantire che un file non sia stato alterato dopo la sua <em>emissione</em> o <em>approvazione</em> formale.</p>
+
+<p>Questa verifica è ottenuta con un meccanismo di <em>disaccoppiamento</em> delle sicurezze logiche o delle liste di accesso tra la posizione del <strong>checksum</strong> del file e quella del file stesso.</p>
+
+<p>In questo scenario se un <em>malicious party</em> riuscisse ad assumere il controllo della posizione del file e riuscisse ad alterarlo, non avrebbe la possibilità di alterare anche il <em>checksum</em> o <strong>hash</strong> (in un’altra posizione e protetto con diverse credenziali) per farlo apparire <em>legittimo</em>; il controllo del <em>checksum</em>, in casi come questo, fallirebbe e darebbe all’utilizzatore un chiaro segnale di attenzione.</p>
+
+<p>Non sono molto esperto di <em>Linux</em>, ma immagino che sia piuttosto semplice mettere in piedi un automatismo in grado di verificare il checksum dei file scaricati… quindi mi limiterò a suggerire una soluzione che possa funzionare comodamente su <strong>Windows</strong>.</p>
+
+<p>Su Windows abbiamo a disposizione <strong>Powershell</strong> che ci può aiutare a risolvere il problema rapidamente. Il comando che utilizzeremo per ottenere il <em>checksum</em> di un file è il seguente:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+get-filehash &lt;filepath&gt;
+
+</code></pre></div></div>
+
+<p>Ma utilizzato aprendo la console di Powershell e inserendo il nome del file manualmente non sembra particolarmente comodo; inoltre l’<em>output</em> del comando sarebbe una lunga stringa esadecimale che dovremo manualmente controllare carattere per carattere.</p>
+
+<p>A questo punto sarebbe più utile e rapido automatizzare un po’ di cose per facilitarci il compito, e lo faremo scrivendo uno script. Vogliamo passare come argomenti allo script sia il file da esaminare che il checksum da verificare. Se il risultato non fosse quello atteso vogliamo che lo script modifichi il file in modo da non consentirne l’apertura con applicazioni predefinite o anche l’esecuzione. Occorre osservare che si dovrà avere accesso al file in modifica.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+
+# Vogliamo che lo script chieda l'hash da verificare
+$targetHash = (Read-Host "Inserire l'hash SHA-256 per il file  $($Args[0])").ToUpper()
+
+# Vogliamo che il primo argomento passato allo script sia
+# intrerpretato come il percordo di un file da controllare
+$actualHash = ([string] (Get-FileHash $Args[0]).hash).ToUpper()
+
+# Controlliamo se i due hash corrispondono o meno
+if (-not($targetHash -eq $actualHash)){
+
+    # In questo caso NON corrispondono
+    "L'hash fornito NON corrisponde a quello ricavato dal file."
+
+    # Vogliamo che lo script ci chieda se vogliamo modificare
+    # l'estensione del file chiamandolo ".check".
+    # In questo modo non potremo aprire il file con una applicazione
+    # di default né eseguirlo per errore.
+    if ((Read-Host "Vuoi impedire l'apertura del file $($Args[0]) ?").ToUpper() -in ("S", "SI", "CERTO", "OK", "YES, "Y")){
+
+       Rename-Item ($Args[0]) -NewName ($Args[0].check)
+
+    }
+
+} else {
+
+    "L'hash fornito corrisponde a quello ricavato dal file."
+
+}
+
+# Questo codice è rilasciato sotto licenza Creative Commons Zero (CC0) 
+
+</code></pre></div></div>
+<p>A questo punto salviamo lo script con nome <code class="language-plaintext highlighter-rouge">checkhash.ps1</code> e siamo a posto.</p>
+
+<h2 id="-oppure-no">… oppure no?</h2>
+
+<p>A qeusto punto dobbiamo sempre aprire la console di Powershell e chiamare lo script per l’esecuzione, e dunque siamo ancora lontani dalla desiderata semplicità d’uso. Non sarebbe molto più comodo se questo script fosse a disposizione sul menu contestuale del File Explorer e ottenesse automaticamente dal file selezionato il percorso da controllare?</p>
+
+<p>Per ottenere questa <em>magia</em> apriamo il registro di Windows (regedit) e cerchiamo la chiave
+<code class="language-plaintext highlighter-rouge">HKEY_CLASSES_ROOT\*\shell</code></p>
+
+<p>Questa chiave contiene i comandi disponibili dal menu contestuale quando è selezionato un file su File Explorer. È piuttosto semplice creare una sotto-chiave con il comando che vogliamo visualizzare e la <em>riga di comando</em> da eseguire. (<code class="language-plaintext highlighter-rouge">REG_SZ</code>) to an expandable string (<code class="language-plaintext highlighter-rouge">REG_EXPAND_SZ</code>).</p>
+
+<p>…Ma facciamo un passo indietro e vediamo il processo passo per passo.</p>
+
+<p><strong>Prima di tutto</strong> dobbiamo creare una chiave per la voce di menu contestuale, più una sotto-chiave che contenga il comando vero e proprio</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+HKEY_CLASSES_ROOT\*\shell
+                         \MyCustomKey
+                                     \command
+
+</code></pre></div></div>
+
+<p>Nella chiave <code class="language-plaintext highlighter-rouge">MyCustomKey</code> il valore di defaul deve solo contenere la voce di menu; qualcosa del tipo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Name: (Default)
+Type: REG_SZ
+Value: Check Hash SHA-256
+
+</code></pre></div></div>
+
+<p>Per questo abbiamo bisogno di creare un file <em>.reg</em> con queste istruzioni:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\CheckHash]
+@="Check Hash SHA-256"
+
+</code></pre></div></div>
+
+<p><strong>In secondo luogo</strong>, all’interno della sottochiave <code class="language-plaintext highlighter-rouge">command</code> dobbiamo inserire la riga di comando, adottando un trucco.</p>
+
+<p>Creiamo semplicemente un nuovo valore come indicato:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Name: TEMP
+Type: REG_EXPANDABLE_SZ
+Value: "Powershell.exe" -file "&lt;script path&gt;\checkhash.ps1" "%1"
+
+</code></pre></div></div>
+<p><em>Nota:</em> il parametro <code class="language-plaintext highlighter-rouge">"%"1</code> è quello che dice alla shell che il file selezionato allapertura del menu contestuale è quello che viene <em>passato</em> come argomento allo script.</p>
+
+<p>Dal momento che non si può cambiare il <em>Value type</em> di un valore quando il suo tipo è un <code class="language-plaintext highlighter-rouge">REG_EXPANDABLE_SZ</code>, abbiamo bisogno di trovare un modo per farlo. Possiamo semplicemente esportare la chiave di registro appena creata e aprirla con un editor di testo. Troveremo qualcosa di simile:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[HKEY_CLASSES_ROOT\*\shell\CheckHash\command]
+TEMP=hex(2):22,00,43,00,3a,00,5c,00,[e una lunga sequenza di valori esadecimali]
+
+</code></pre></div></div>
+
+<p>Semplicemente sostituiamo il nome <code class="language-plaintext highlighter-rouge">TEMP</code> con un carattere <code class="language-plaintext highlighter-rouge">@</code>, che indica sempre il valore di default della sotto-chiave <code class="language-plaintext highlighter-rouge">command</code>. Possiamo salvare il file e ricaricarlo sul registro senza toccare la lunga sequenza di cifre esadecimali.</p>
+
+<h2 id="ta-daan">Ta-daan!</h2>
+
+<p>Seguendo questa sorta di <em>guida</em> che ho descritto potete aggiungere qualunque comando personalizzato al menu contestuale per svolgere i compiti più disparati.</p>
+
+<h2 id="links">Links</h2>
+
+<p><a href="https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash">https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash</a></p>
+
+  </article>
+</section>
+</main>
+
+</div>
+      </div><footer>
+<div class="footerContainer h-card">
+  <span class="span77nn"><a class="u-url" href="https://77nn.it">77nn.it</a></span> è scritto e pubblicato da <span class="p-name" rel="author">Michele Brami</span>. <a rel="license" href="https://77nn.it/legale.html">Tutti i diritti riservati.</a><br>
+Se ti piacciono i miei contenuti puoi <a href="https://ko-fi.com/titinonero">offrirmi un caffé!</a><br>
+<br>
+<a rel="me" href="https://mastodon.uno/@titinoNero">Collegati con me su Mastodon!</a> - <a rel="noopener" href = "https://77nn.it/feed.xml" target="_blank" download="77nn-feed.xml" tabindex = "0"><span>RSS feed </span><img class = "rss-icon" src="https://77nn.it/assets/images/rss.svg" alt="Pixelated style icon representing RSS feed logo"/></a>
+</div>
+</footer>
+
+    </div>
+     
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "BlogPosting",
+        "@id": "https://77nn.it/2023/05/01/Verifica-hash-file-scaricati.html",
+        "mainEntityOfPage": "https://77nn.it/2023/05/01/Verifica-hash-file-scaricati.html",
+        "headline": "Controllo hash da menu contestuale",
+        "description": "Come automatizzare la verifica su Windows di un checksum di un file scaricato attraverso il menu contestuale utilizzando Powershell e modificando il registro.",
+        "datePublished": "2023-05-01T00:00:00+02:00",
+        "dateModified": "2023-05-07T11:57:54+02:00",
+        "author": {
+            "@type": "Person",
+            "@id": "https://77nn.it/autore.html",
+            "name": "Michele Brami",
+            "url": "https://77nn.it/autore.html"
+        },
+        "image": {
+            "@type": "ImageObject",
+            "@id": "",
+            "url": "",
+            "height": "362",
+            "width": "388"
+        },
+        "url": "https://77nn.it/2023/05/01/Verifica-hash-file-scaricati.html",
+        "isPartOf": {
+            "@type" : "Blog",
+             "@id": "https://77nn.it/blog.html",
+             "name": "TiTiNoNero dice cose"
+        }
+    }
+    </script>
+   
+  </body>
+</html>

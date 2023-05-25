@@ -1,29 +1,903 @@
----
-layout: null
-nositemap: 1
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    {% for post in site.posts limit:1000 %}
-    {% if post.sitemap != false %} 
+    <title></title>
+    <description>TiTiNoNero dice cose</description>
+    <link>https://77nn.it/</link>
+    <atom:link href="https://77nn.it/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 21 May 2023 16:32:32 +0200</pubDate>
+    <lastBuildDate>Sun, 21 May 2023 16:32:32 +0200</lastBuildDate>
+    
+     
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
+        <title>IA: Opportunità e Rischi dei modelli di linguaggio</title>
+        <description>&lt;p&gt;Ho pensato molto a quale titolo dare a questo articolo sull’&lt;strong&gt;Intelligenza Artificiale&lt;/strong&gt;, ma alla fine non ho trovato nulla di meglio. Quello che però manca nel titolo è la risposta alla domanda &lt;em&gt;“per chi?”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;A seconda della risposta, come è ovvio, le posizioni potrebbero essere totalmente ribaltate.&lt;/p&gt;
+
+&lt;p&gt;Certamente, allo stato attuale, &lt;strong&gt;l’opportunità&lt;/strong&gt; siede comodamente ed esclusivamente nel salotto di chi possiedee la &lt;strong&gt;tecnologia&lt;/strong&gt;. E il duplice motivo, trivialmente, è perché hanno un vantaggio tecnologico sul resto del mondo e molti forzieri zeppi di denari sui cui fondare altra ricerca.&lt;/p&gt;
+
+&lt;p&gt;Ma siamo certi che, in un momento in cui la parola &lt;strong&gt;GPT&lt;/strong&gt; si pronuncia in 7000 diversi accenti in tutto il mondo, i notiziari traboccano di servizi a riguardo (nel bene o nel male), e i &lt;em&gt;social&lt;/em&gt; fomentano &lt;em&gt;l’hype&lt;/em&gt; di una nuova ed ennesima &lt;em&gt;alba tecnologica&lt;/em&gt;, gli investitori siano disposti ancora per molto a &lt;em&gt;non mietere&lt;/em&gt; un raccolto così promettente?&lt;/p&gt;
+
+&lt;p&gt;Personalmente sono certo che siano già all’opera, prima che la &lt;strong&gt;bolla&lt;/strong&gt; si sgonfi e che le innumerevoli e diversificate regolamentazioni nazionali esigano di riscuotere la loro parte.&lt;/p&gt;
+
+&lt;p&gt;E molti altri, con ammirevole e opportunistico tempismo, sono all’opera nel costruire scatole, scatolette, lavatrici e frigoriferi dove alloggiare elettronica, contenuti, applicazioni e integrazioni pensati per &lt;em&gt;offrire&lt;/em&gt; agli utenti &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; &lt;em&gt;l’esperienza definitiva&lt;/em&gt; di cui non sapevano di aver bisogno.&lt;/p&gt;
+
+&lt;p&gt;Al contempo, molte Aziende &lt;em&gt;leader nei loro settori&lt;/em&gt;, non possono di certo rischiare di perdere il loro vantaggio competitivo, incalzate da &lt;em&gt;world-rank-experts&lt;/em&gt;, non abbracciando le &lt;strong&gt;IA&lt;/strong&gt; che i loro competitor vorrebbero sfruttare per pareggiarlo.&lt;/p&gt;
+
+&lt;p&gt;Ed ecco che la bolla è piena in un attimo: hanno tutti giocato la partita perfetta sfruttando velocità, accuratezza e timore dell’ignoto.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“Ma tu parli così perché hai paura! La tecnologia esiste e funziona, non sono balle, e presto sostituirà anche te”&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Non accadrà. E ne spiego il motivo: è esattamente come un &lt;em&gt;generatore illimitato di lettere casuali&lt;/em&gt;, dove la magia dell’&lt;strong&gt;AI&lt;/strong&gt; abbia lasciato solo frasi di senso compiuto &lt;em&gt;ragionevolmente&lt;/em&gt; attese dall’interlocutore umano.&lt;/p&gt;
+
+&lt;p&gt;Eventualmente, con molto tempo a disposizione, riscriverà spontaneamente e per intero la &lt;em&gt;Divina Commedia&lt;/em&gt; identica lettera per lettera, o poemi e ricerche di senso compiuto mai letti prima. Ma, per poter riconoscere e distinguere la loro originalità e validità, occorrerà che una persona scorga queste perle in un infinito flusso di frasi. Se tanto qualcuno le dovrà leggere tutte, valutarle e decidere se abbiano reale valore, non sarebbe meglio investire questo tempo in un modo più razionale? Tipo nell’educazione e nella formazione?&lt;/p&gt;
+
+&lt;p&gt;Ma allora dove sta il &lt;strong&gt;rischio&lt;/strong&gt; se queste IA sono così inoffensive?&lt;/p&gt;
+
+&lt;p&gt;Se in molti adorano questa &lt;em&gt;magnificenza&lt;/em&gt;, altrettanti la temono:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Secondo un sondaggio &lt;a href=&quot;https://www.reuters.com/technology/ai-threatens-humanitys-future-61-americans-say-reutersipsos-2023-05-17/&quot;&gt;&lt;em&gt;Reuters/IPSOS&lt;/em&gt;&lt;/a&gt; il 61% degli americani afferma che l’Intelligenza Artificiale (così, genericamente…) rappresenta una minaccia per l’Umanità.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Quasi tutti i governi “occidentali” concordano sulla necessità di regolamentare (in un modo o nell’altro) l’uso e lo sviluppo di dei &lt;strong&gt;modelli di linguaggio&lt;/strong&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;em&gt;Elon Musk e il “Future of Life Institute”&lt;/em&gt;, che ne riceve ricche donazioni, chiedono uno stop di 6 mesi allo sviluppo ulteriore della tecnologia. &lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Le ragioni, al di là delle irrazionali paure da romanzo in stile &lt;em&gt;SkyNet&lt;/em&gt; o &lt;em&gt;Matrix&lt;/em&gt;, le possiamo riassumere fondamentalmente in queste casistiche:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“L’AI sostituirà persone in lavori a bassa o media intensità intellettuale”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Possibile, per certi versi e con diversi limiti tecnici, quando il lavoro “intellettuale” è attualmente un lavoro di compilazione e ricerca su altri documenti. Però sarebbe assolutamente necessario concedere assoluta &lt;em&gt;fiducia&lt;/em&gt; ad un sistema che non è deterministico.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“Del resto nemmeno un umano lo sarebbe”.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Vero, ma un umano è &lt;em&gt;accountable&lt;/em&gt;, mentre l’IA non la puoi licenziare.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“L’IA raccoglierà tutti i nostri dati dai social, dall’email, dal cellulare, dagli estratti conto delle nostre carte di credito e confezionerà offerte &lt;em&gt;irrinunciabili&lt;/em&gt; personalizzate per ognuno di noi, basandosi sui nostri gusti, sul nostro stile, sui nostri desideri, sui valori e su tutto ciò che ci è più caro”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Esatto, lo farà. Anzi, lo sta già facendo da anni. Se la temiamo per questo, dovremo farci un esamino di coscienza e ricordare ogni volta che abbiamo premuto &lt;em&gt;“Accetta tutti i cookies e prosegui”&lt;/em&gt;, oppure &lt;em&gt;“Dichiaro di aver letto l’informativa della privacy”&lt;/em&gt;. Ma non è troppo tardi: è possibile evitare di spargere al vento la nostra vita in qualunque momento, rinunciando a piccoli &lt;em&gt;guilty pleasures&lt;/em&gt; che non ci rendono persone migliori.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“L’IA potrebbe essre usata da governi totalitari per massimizzare la sorveglianza sugli individui e aiutare a perpetrare crimini contro i diritti umani, o da potenze straniere per sfruttare le nostre debolezze e indirizzare la nostra politica nazionale.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Sì, anche questo già visto. Da anni. &lt;em&gt;Been there. Done that.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Probabilmente manca qualche &lt;em&gt;paura&lt;/em&gt; all’appello… se è così, per favore segnalatemela e la aggiungerò alla lista.&lt;/p&gt;
+
+&lt;p&gt;Una delle critiche più pungenti l’ho letta giusto oggi. Non ricordo le parole esatte o chi l’ha pubblicata, ma diceva pressappoco così:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Viviamo in un mondo in cui la maggioranza delle persone che sopravvive, lo fa spezzandosi la schiena per un reddito minimo, mentre invece robot e computer scrivono poesie e saggi, ballano o realizzano opere d’arte. Non è il &lt;em&gt;futuro&lt;/em&gt; che desideravo.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Il vero rischio che vedo è quello dell’esplosione dell’ennesima bolla, come ne abbiamo finora viste tante, e la conseguente ennesima Caporetto degli investitori che ritireranno fiumi di miliardi dal settore per anni a venire. Faccio degli esempi a caso: Dot-com, Criptovalute, NFT, Metaverso.&lt;/p&gt;
+
+&lt;p&gt;Per adesso, per quello che riesco a vedere, c’è chi ha paure certamente fondate, ma anche piuttosto scontate. Ma basterà questo a minacciare, più di quello che già avviene da tempo, il futuro dell’Umanità? Probabilmente non sarà l’AI a minare il nostro futuro, non più di ciò che fanno altri nostri simili con la pretesa di salvarlo, il mondo.&lt;/p&gt;
+
+&lt;p&gt;Le tecnologie non sono &lt;em&gt;mai&lt;/em&gt; buone o cattive, quindi forse è vero che tutto dipende dalle &lt;em&gt;regole&lt;/em&gt; che decidiamo di dare loro. Regole che, come quelle per le armi nucleari o i diritti umani, hanno senso solo se tutti le rispettano… e qui mi sento gelare il sangue nelle vene.&lt;/p&gt;
+
+&lt;p&gt;Alla fine, non so proprio cosa pensare.&lt;/p&gt;
+
+&lt;p&gt;Per me queste tecnologie rappresentano opportunità di esplorazione, di utilizzo (consapevole dei limiti), e di ampliamento dei miei orizzonti umani e professionali, con meno tempo da passare a ricostruire e cercare e più a valutare e decidere.&lt;/p&gt;
+
+&lt;p&gt;Da un altro lato credo che i limiti siano molti, troppi, per costituire una &lt;em&gt;nuova&lt;/em&gt; minaccia alle vere vittime, cioè alla &lt;strong&gt;proprietà intellettuale&lt;/strong&gt; e alla &lt;strong&gt;privacy&lt;/strong&gt;. Non possiamo farci più di tanto, se non insistere ed educare le nuove generazioni ad una maggiore consapevolezza.&lt;/p&gt;
+
+&lt;p&gt;A volte mi piace soffermarmi, guardano le mie figlie, e penso che questa consapevolezza per cui io mi sbatto l’abbiano raggiunta senza troppo sforzo, quasi come un’immunità ad un male endemico, a forza di guardare noi che perdiamo la testa dietro a questioni che hanno già giudicato e per cui hanno già preso contromisure a prova di Terminator.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Strana parola &lt;em&gt;utente&lt;/em&gt; in inglese: &lt;em&gt;user&lt;/em&gt; non esisteva separatamente dall’espressione &lt;em&gt;drug user&lt;/em&gt; prima dell’avvento dei computer &lt;a href=&quot;https://www.etymonline.com/search?q=user&quot;&gt;Etymonline&lt;/a&gt;. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Questo punto meriterebbe una lunga trattazione a parte, tanto è agghiacciante nel suo lucido delirio. Per farla breve questo “istituto” non è contro l’IA, bensì la vede come fondazione per il miglioramento della vita dell’uomo in un contesto di lunghissimo termine. Il fatto è che l’IA dovrebbe essere esclusivamente sviluppata e guidata dai criteri di chi, come questi signori (ovverosia i loro miliardari finanziatori filantropi), abbia una mente illluminata dal desiderio di vedere l’uomo colonizzare lo spazio e l’intero universo in un arco di milioni di anni a venire. A questo scopo, e con la prospettiva di poter soddisfare l’esistenza &lt;em&gt;futura&lt;/em&gt; di 10&lt;sup&gt;54&lt;/sup&gt; individui, non sarebbero probabilmente restii a sacrificarne una esigua frazione percentuale (giusto qualche misero e irrilevante miliardo di vite). La richiesta di mettere &lt;em&gt;in pausa&lt;/em&gt; lo sviluppo (per soli 6 mesi) assomiglia molto, a mio modo di vedere, il tentativo di (A) rimettersi in pari con lo sviluppo e (B) di organizzare una intensa operazione di lobbying per piegare le regolamentazioni in via di definizione a favore della loro &lt;em&gt;missione&lt;/em&gt;. Potete appronfondire qui: &lt;a href=&quot;https://aeon.co/essays/why-longtermism-is-the-worlds-most-dangerous-secular-credo&quot;&gt;Against longtermism&lt;/a&gt; &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 19 May 2023 00:00:00 +0200</pubDate>
+        <link>https://77nn.it/2023/05/19/IA-Opportunita-rischio.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/19/IA-Opportunita-rischio.html</guid>
+        
+        <category>ethics</category>
+        
       </item>
-      {% endif %}
-    {% endfor %}
+      
+    
+     
+      <item>
+        <title>Tabelle e dati in testo semplice</title>
+        <description>&lt;p&gt;È complicato, utilizzando un editor di puro testo, realizzare &lt;strong&gt;tabelle&lt;/strong&gt; &lt;em&gt;visuali&lt;/em&gt; perfette nei dettagli: ecco degli utili strumenti per facilitare il compito.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/Plain-Text-Tables.png&quot; alt=&quot;Un editor di tabelle ASCII/UNICODE semplice e personalizzabile&quot; /&gt;
+&lt;figcaption&gt;Il serivzio online *Plain Text Tables* consente di creare tabelle in ASCII/UNICODE rapidamente e con una ottima resa visuale.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Dopo &lt;a href=&quot;https://77nn.it/2023/04/24/Plain-text-rocks.html&quot;&gt;il mio post di qualche settimana fa&lt;/a&gt; che rivalutava e promuoveva l’utilizzo del &lt;strong&gt;testo semplice&lt;/strong&gt; come formato di lavoro da preferire, mi ero ripromesso di approfondirne alcuni aspetti. Ed ecco dunque che, girovagando per la rete, ho trovato diverse &lt;em&gt;utility&lt;/em&gt; che permettono di realizzare tabelle &lt;em&gt;perfette&lt;/em&gt; da inserire in un documento di solo testo, ma non solo.&lt;/p&gt;
+
+&lt;p&gt;Ovviamente ci sono moltissime applicazioni per manipolare file di testo in modo molto raffinato, ma ho preferito concentrarmi su dei tool online che sembrano non &lt;em&gt;trattenere&lt;/em&gt; una copia dei dati che inseriamo: salvaguardiamo sempre la nostra privacy, soprattutto e in special modo quando utilizziamo strumenti di conversione &lt;em&gt;gratuiti&lt;/em&gt; online!&lt;/p&gt;
+
+&lt;h2 id=&quot;plain-text-table&quot;&gt;Plain Text Table&lt;/h2&gt;
+&lt;p&gt;Link: &lt;a href=&quot;https://plaintexttools.github.io/plain-text-table/&quot;&gt;plaintexttools.github.io/plain-text-table&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Plain Text Table è un progetto Open Source con licenza MIT, ed è utilizzabile online al link indicato. Tra i tool che ho provato credo sia il più leggero, semplice e diretto. Consente l’inserimento dei dati direttamente su una form, con una buona meccanica di spostamento tra le celle &lt;em&gt;master&lt;/em&gt; e, successivamente, si può scegliere e personalizzare il formato grafico che più ci aggrada. Purtroppo non consente l’importazione né l’esportazione di file &lt;strong&gt;CSV&lt;/strong&gt;. Per tabelle in puro stile testuale (con verie opzioni estetiche) o &lt;strong&gt;Markdown&lt;/strong&gt; è però perfetto. Se invece si ha la necessità di lavorare con dei dati già esistenti in formato CSV è necessario utilizzare una delle altre possibilità di seguito. Un esempio di tabella generata con questo tool:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;╒══════╤═════════╤════════╤═══════════════════════════════════╕
+│ ID   │ Type    │ Size   │ Notes                             │
+├──────┼─────────┼────────┼───────────────────────────────────┤
+│ 0001 │ Normal  │ Small  │ Low price, not really interesting │
+├──────┼─────────┼────────┼───────────────────────────────────┤
+│ 0002 │ Normal  │ Medium │ High price, many features         │
+├──────┼─────────┼────────┼───────────────────────────────────┤
+│ 0003 │ Premium │ Large  │ High price, flagship model        │
+╘══════╧═════════╧════════╧═══════════════════════════════════╛
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;table-editor&quot;&gt;Table Editor&lt;/h2&gt;
+&lt;p&gt;Link: &lt;a href=&quot;https://truben.no/table/&quot;&gt;truben.no/table/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un editor di tabelle testuali multiformato. Non è indicata la licenza d’uso. Il più completo di quelli che ho provato, ma pecca un po’ per la meccanica di inserimento dei dati nella tabella (bisogna ogni volta cliccare sulla cella che si vuole riempire). Utilissimo per creare tabelle adatte per LateX, Balsamiq, BBCode, Comma separated values, HTML, JSON, Markdown, Mathematica, Plain text, reStructuredText, SQL, Wiki markup. Può importare file LaTeX, Balsamiq, CSV, HTML e JSON. Ha qualche problemino con l’unione di celle e l’output in puro testo non è eccezionale, ma si può scegliere uno qulunque dei formati di output una volta compilata la tabella master, e si possono trasporre righe e colonne dell tabelle. Un esempio con l’unico stile possibile:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;+------+---------+--------+-----------------------------------+
+| ID   | TYPE    | SIZE   | NOTES                             |
++------+---------+--------+-----------------------------------+
+| 0001 | Normal  | Small  | Low price, not really interesting |
++------+---------+--------+-----------------------------------+
+| 0002 | Normal  | Medium | High price, many features         |
++------+---------+--------+-----------------------------------+
+| 0003 | Premium | Large  | High price, flagship model        |
++------+---------+--------+-----------------------------------+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;plain-text-tables-generator&quot;&gt;Plain Text Tables Generator&lt;/h2&gt;
+&lt;p&gt;Link: &lt;a href=&quot;https://table.6cm.co/text_tables&quot;&gt;table.6cm.co/text_tables&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Un editor non OpenSource, ma gratuito, di tabelle in formato LaTeX, HTML, Text, Markdown e MediaWiki, che può importare file o appunti in formato CSV. Anche per questo strumento la meccanica di inserimento è molto simile a quella di Table Editor. Rispetto a quest’ultimo l’output in test è leggermete migliore, ma ha il difetto che il formato di generazione deve essere scelto all’inizio e non può generare più formati con la stessa tabella master. L’applicazione ha più di un bug seccante, ed è quella che mi sento di raccomandare di meno.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;╔══════╦═════════╦════════╦═══════════════════════════════════╦══╗
+║ ID   ║ Type    ║ Size   ║ Notes                             ║  ║
+╠══════╬═════════╬════════╬═══════════════════════════════════╬══╣
+║ 0001 ║ Normal  ║ Small  ║ Low price, not really interesting ║  ║
+╠══════╬═════════╬════════╬═══════════════════════════════════╬══╣
+║ 0002 ║ Normal  ║ Medium ║ High price, many features         ║  ║
+╠══════╬═════════╬════════╬═══════════════════════════════════╬══╣
+║ 0003 ║ Premium ║ Large  ║ High price, flagship model        ║  ║
+╚══════╩═════════╩════════╩═══════════════════════════════════╩══╝
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;lavorare-con-tabelle-di-dati-csv&quot;&gt;Lavorare con tabelle di dati CSV&lt;/h2&gt;
+
+&lt;p&gt;I tool che ho descritto sopra sono comodi per rappresentare graficamente una tabella in un documento di testo, ma non sempre questa scelta è premiante, specialmente se la tabella in questione contiene dati che vogliamo condividere allo scopo di poterli riprocessare. In queste circostanze è preferibile l’utilizzo di un formato CSV (Comma Separated Values), che ha il pregio di essere estreamente &lt;em&gt;formale&lt;/em&gt; nella definizione delle colonne e dei valori, ma il difetto di non avere una resa visuale elegante:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&quot;ID&quot;,&quot;Type&quot;,&quot;Size&quot;,&quot;Notes&quot;
+&quot;0001&quot;,&quot;Normal&quot;,&quot;Small&quot;,&quot;Low price&quot;,&quot;not really interesting&quot;
+&quot;0002&quot;,&quot;Normal&quot;,&quot;Medium&quot;,&quot;High price, many features&quot;
+&quot;0003&quot;,&quot;Premium&quot;,&quot;Large&quot;,&quot;High price,flagship model&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Inoltre il formato CSV è uno dei formati raccomandati dalla Libreria del Contresso degli Stati Uniti per la conservazione digitale dei dati a lungo termine (&lt;a href=&quot;https://www.loc.gov/preservation/digital/formats/fdd/fdd000323.shtml&quot;&gt;www.loc.gov/preservation/digital/formats/fdd/fdd000323.shtml&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Per concludere, sono moltissime le applicazioni che accettano file CSV come input, pertanto potrebbe essere una buona idea separare i dati così tabulati dal file di testo principale. Lascerò l’argomento delle conversioni per un prossimo post. &lt;em&gt;Stay Tuned!&lt;/em&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 16 May 2023 00:00:00 +0200</pubDate>
+        <link>https://77nn.it/2023/05/16/Tabelle-Dati-Testo-semplice.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/16/Tabelle-Dati-Testo-semplice.html</guid>
+        
+        <category>tech</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Brave Search: come e perché usarlo</title>
+        <description>&lt;p&gt;&lt;strong&gt;Brave Software&lt;/strong&gt; ha annunciato pochi giorni fa di aver rimosso i risultati di Bing dalla propria &lt;span class=&quot;definition&quot; title=&quot;Search Engine Results Page, la tipica pagina con l&apos;elenco dei risultati restituita da un motore di ricerca&quot;&gt;&lt;em&gt;SERP&lt;/em&gt;&lt;/span&gt;, raggiungendo l’indipendenza nell’indicizzazione del Web. Questo significa che a tutti gli effetti è un motore di ricerca alternativo ai più noti &lt;em&gt;Google&lt;/em&gt; o &lt;em&gt;Bing&lt;/em&gt; (ma ne esistono solo pochissimi altri che siano totalmente indipendenti).&lt;/p&gt;
+
+&lt;p&gt;Dunque l’ingresso di un nuovo &lt;em&gt;player&lt;/em&gt; non può che essere una buona notizia: nella varietà c’è competizione naturale e reciproco miglioramento.&lt;/p&gt;
+
+&lt;p&gt;Brave fornisce gratuitamente anche un proprio browser (basato - &lt;em&gt;ahimé&lt;/em&gt; - su Chromium&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;) generalmente considerato “sicuro”, privo di &lt;em&gt;spyware&lt;/em&gt; e con tante caratteristiche innovative che lo rendono desiderabile ad un pubblico &lt;em&gt;informaticamente&lt;/em&gt; avanzato, il tutto accompagnato da svariati servizi (VPN, Wallet, Rewards, Talk, e altro ancora).&lt;/p&gt;
+
+&lt;p&gt;Tra i &lt;em&gt;claim&lt;/em&gt; più interessanti, sia per il browser che per &lt;strong&gt;Brave Search&lt;/strong&gt;, c’è sicuramente quello che nega di tracciare, in alcun modo, gli utenti (non è richiesto un account per utilizzare la ricerca).&lt;/p&gt;
+
+&lt;p&gt;Non voglio avventurarmi nella storia del marchio Brave, che comprende anche alcuni episodi controversi (ormai superati: chi non rischia di smarrire la rotta nella tempesta?), ma potete curiosare e acquisire tutte le informazioni del caso.&lt;/p&gt;
+
+&lt;p&gt;Per quanto riguarda la &lt;em&gt;ricerca&lt;/em&gt;, raggiungibile a questo indirizzo &lt;a rel=&quot;nofollow noopener&quot; href=&quot;https://search.brave.com&quot; target=&quot;_blank&quot;&gt;search.brave.com&lt;/a&gt; e impostabile come default su tutti i browser, si presenta molto pulita con un tema “light/dark” e alcune impostazioni di lingua, livello di “safe search”, zona geografica e finestra temporale di ricerca.&lt;/p&gt;
+
+&lt;p&gt;La casella di ricerca propone i risultati più pertinenti (anche in italiano, indipendentemente dalla lingua o dalla regione impostate) mentre si digita la &lt;em&gt;query&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;In base alla ricerca, sui risultati possono essere presenti più sezioni, tra cui:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Una sezione contestuale contenente &lt;em&gt;Featured snippets&lt;/em&gt; con informazioni generali da Wikipedia o da siti istituzionali ufficiali o altre fonti (in alto a destra della SERP);&lt;/li&gt;
+  &lt;li&gt;Una &lt;em&gt;sezione di testa&lt;/em&gt; con i risultati maggiornamente rilevanti, con estratti contestualizzati in relazione alla ricerca fatta (ricerca migliorata da AI);&lt;/li&gt;
+  &lt;li&gt;Alcune sotto-sezioni (variabili) relative a &lt;em&gt;notizie&lt;/em&gt;, &lt;em&gt;video&lt;/em&gt;, &lt;em&gt;immagini&lt;/em&gt;, &lt;em&gt;discussioni sui social&lt;/em&gt;;&lt;/li&gt;
+  &lt;li&gt;Una sezione &lt;em&gt;People also ask&lt;/em&gt;, con ricerche tipicamente associate alla nostra query (molto utile!);&lt;/li&gt;
+  &lt;li&gt;Una sezione. più im basso, in cui ci viene proposto di effettuare la ricerca su altri motori (fair!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ma la funzione che più mi piace di Brave Search è il nuovo &lt;strong&gt;AI summarizer&lt;/strong&gt;, che non solo evidenzia un estratto da una pagina specifica, ma combina, in un unico breve testo, contenuti da origini diverse per offrire una risposta comprensiva alla query. Attulmente è disponibile in lingua inglese. Non tutte le query attiveranno la funzionalità, ma è decisamente più probabile se si formulano domande semplici e “naturali” in un corretto inglese (con una certa tolleranza per l’ortografia).&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/Brave-Search-Summarizer.png&quot; alt=&quot;la funzione AI Summarizer di Brave Search all&apos;opera.&quot; /&gt;
+&lt;figcaption&gt;la funzione AI Summarizer di Brave Search all&apos;opera.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Nell’immagine sopra si può vedere un esempio della &lt;em&gt;feature&lt;/em&gt; in funzione. Alla domanda “What is life-cycle management?” l’IA integrata estrae le informazioni da due fonti distinte e le mostra come unico paragrafo che risponde sinteticamente alla domanda posta. In più riporta, sotto, le &lt;em&gt;fonti&lt;/em&gt; e per ciascun estratto, al passaggio con il mouse, ne evidenzia quella relativa. Ecco, sono quasi commosso: vorrei che &lt;strong&gt;ChatGPT&lt;/strong&gt; (ne ho parlato in &lt;a href=&quot;https://77nn.it/2023/01/02/Abbracciamo-le-AI-Generative.html&quot; target=&quot;_blank&quot;&gt;questo post&lt;/a&gt; qualche tempo fa) lavorasse esattamente in questo modo, senza reinterpretare le fonti e anzi riportandole in totale trasparenza.&lt;/p&gt;
+
+&lt;p&gt;Tutto sommato i risultati che si ottengono, sia da ricerca normale che da AI Summarizer, sono robusti e rilevanti. Non è ancora chiarissimo se ci siano, e quali siano, i risultati “sponsorizzati”, e questo è un punto un po’ meno a favore della trasparenza, né quali siano esattamente i segnali web che Brave Search utilizzi per classificare e mostrare i risultati, ma ci si aspetta che presto Brave fornirà una &lt;em&gt;webmaster&lt;/em&gt; console nello stile di Bing o Google, dove gli esperti di &lt;em&gt;SEO&lt;/em&gt; potranno sbizzarrsirsi.&lt;/p&gt;
+
+&lt;p&gt;Ultima nota: è disponibile anche una &lt;strong&gt;Brave Search Premium&lt;/strong&gt; a 3$ al mese, ma a meno che non me la offrano gratuitamente (ehi, Brave! pensaci!) non ho intenzione di attivarla solo per fare una prova.&lt;/p&gt;
+
+&lt;p&gt;In definitiva ti consiglio di provare questo motore di ricerca, e se non ti offrisse l’accuratezza a cui sei abituato, basta inserire &lt;code&gt;!g&lt;/code&gt; oppure &lt;code&gt;!b&lt;/code&gt;, all’inizio o alla fine della tua query, per ottenere rispettivamente i risultati direttamente da Google o da Bing (se, putacaso, lo preferissi).&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;L’&lt;em&gt;ahimé&lt;/em&gt; non è riferito a Chromium come browser che non apprezzo, ma alla tendenza che lo sta facendo diventare l’&lt;em&gt;unico&lt;/em&gt; browser possibile. Io supporto Firefox come attuale unica alternativa, anche se riconosco la qualità e la completezza di Chromium in tutte le sue declinazioni. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 07 May 2023 00:00:00 +0200</pubDate>
+        <link>https://77nn.it/2023/05/07/Brave-Search-come-perche-usarlo.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/07/Brave-Search-come-perche-usarlo.html</guid>
+        
+        <category>tech</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Mastodon, il Fediverso e il web &apos;alternativo&apos;</title>
+        <description>&lt;p&gt;Circa 6 mesi fa ho preso una decisione “forte”, ovvero ho eliminato tutti i miei account &lt;strong&gt;social&lt;/strong&gt; (fatta eccezione per quello su &lt;strong&gt;LinkedIn&lt;/strong&gt; che per me rappresenta un interesse professionale non trascurabile) dopo averne &lt;em&gt;difficoltosamente&lt;/em&gt;&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; scaricato tutti i dati.&lt;/p&gt;
+
+&lt;h2 id=&quot;una-decisione-difficile&quot;&gt;Una decisione difficile&lt;/h2&gt;
+
+&lt;p&gt;Oltre a questi account mi sono liberato anche da &lt;strong&gt;Whatsapp&lt;/strong&gt;, mandando un laconico messaggio di commiato. Volevo fare &lt;em&gt;tabula rasa&lt;/em&gt; e ripartire con un networking meno tossico, meno dicotomico, meno edonistico. Sentivo la necessità di connessioni sociali, ma volevo abbandonare tutta la zavorra costituita dalle aspettative dei numerosi “conoscenti” e dalla mia ritrosia a manifestare dissenso verso di loro.&lt;/p&gt;
+
+&lt;p&gt;Sul mio vecchio sito web, anch’esso abbandonato e ripulito, ho lasciato questa spiegazione, &lt;em&gt;memento mori&lt;/em&gt; di un’altra epoca della mia esistenza online, scritta con la migliore &lt;em&gt;delicatezza&lt;/em&gt; di cui sono capace:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ho capito che il mio nome non è un marchio, ma solo il modo in cui mi chiamano gli amici, e che questo equivoco della brandizzazione degli individui obbliga ad un liturgia eucaristica di sé stessi, ad associarsi ad un’immagine poco realistica, ad applicare un template preconfigurato alla propria presenza online. Questo mi rende meno libero e non rende servizio alla parte di me che voglio gli altri conoscano.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Non voglio nascondere che da tempo nutro una certa - e costantemente rinnovata - sfiducia verso la legittimità e l’eticità del trattamento dei dati personali operato dalle &lt;strong&gt;Big Tech&lt;/strong&gt;, e che questa mia decisione ha tenuto conto anche di questa motivazione. Non c’è nessun &lt;em&gt;complottismo&lt;/em&gt; dietro a questo mio &lt;em&gt;sentire&lt;/em&gt;, ho semplicemente applicato una logica di base, ovvero:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Se non ti piace quello che facciamo non sei obbligato a restare: quello è &lt;em&gt;l’uscio&lt;/em&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;il-viaggio-continua-su-mastodon-e-il-fediverso&quot;&gt;Il viaggio continua su Mastodon e il Fediverso&lt;/h2&gt;
+
+&lt;p&gt;Ma non sono qui a criticare chi è rimasto, piuttosto solo per raccontare che me ne sono andato…&lt;/p&gt;
+
+&lt;p&gt;… e che sono approdato su &lt;strong&gt;Mastodon&lt;/strong&gt;&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot; rel=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;, inizialmente con il mio vero nome, subito sostituito da pseudonimo, e infine sostituito da una mediazione per cui, seppur non immediatamente identificabile, se proprio lo desideri e non sei un &lt;em&gt;dannato&lt;/em&gt; bot, puoi trovarmi senza grande sforzo.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/Fediverse-mosaic.png&quot; alt=&quot;Il logo del Fediverso, un crogiuolo pluralista, vivace e operoso.&quot; /&gt;
+&lt;figcaption&gt;Il logo del Fediverso: un crogiuolo pluralista, vivace e operoso. &lt;a href=&quot;https://commons.wikimedia.org/wiki/File:Fediverse_mosaic.svg&quot;&gt;Tobias Buckdahn (@tobias@my.brick.camp)&lt;/a&gt;, &lt;a href=&quot;https://creativecommons.org/licenses/by-sa/4.0&quot;&gt;CC BY-SA 4.0&lt;/a&gt;, via Wikimedia Commons&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Quello che ho trovato su Mastodon, o meglio sul &lt;strong&gt;Fediverso&lt;/strong&gt;, più scarno e meno scintillante di Facebook o Twitter, è una comunità di persone che non vivono di &lt;em&gt;like&lt;/em&gt; (su Mastdon non ci sono algoritmi che rendono visibili le persone con più like o che pagano una spunta blu), che condividono pensieri più o meno profondi, battute, idee, notizie che hanno a cuore, e si buttano in discussioni animate nel massimo rispetto gli uni degli altri… ma non è del tutto vero.&lt;/p&gt;
+
+&lt;p&gt;La realtà è che ci sono persone di tutti i tipi, come in qualunque comunità; ci sono quelle aperte al dialogo e quelle arroganti… ma chi disturba viene naturalmente isolato (senza necessariamente segnalarlo) e reso inoffensivo. Le regole sono chiare e i moderatori fanno il loro lavoro egregiamente e umanamente. Il &lt;em&gt;mood&lt;/em&gt; è certamente molto rilassato, ma ci sono discussioni di carattere e grande qualità, non inquinate da &lt;em&gt;troll&lt;/em&gt; e odiatori indisciplinati.&lt;/p&gt;
+
+&lt;p&gt;Sì, certo, ci sono anche le &lt;em&gt;celebrità&lt;/em&gt;, ma non quelle con lo &lt;em&gt;staff&lt;/em&gt; o il &lt;em&gt;socialmediacoso&lt;/em&gt;, forse perché su Mastodon non si monetizza facilmente e non si può &lt;em&gt;acquistare visibilità&lt;/em&gt;. Per dire… mi è capitato di scambiare qualche battuta con Neil Gaiman o Mark Ruffalo, con la stessa serenità e &lt;em&gt;parità&lt;/em&gt; con cui si parla con &lt;em&gt;Farfallone72&lt;/em&gt; e &lt;em&gt;SiorAmedeo&lt;/em&gt;, senza ostentazioni e &lt;em&gt;“splendidità”&lt;/em&gt; di sorta.&lt;/p&gt;
+
+&lt;p&gt;Ci sono inoltre varie comunità di interesse, come l’&lt;strong&gt;istanza&lt;/strong&gt; (squisitamente tecnica) dedicata alla Cybersecurity, o quelle legate ai diritti civili e sociali, quelle votate a giochi, fumetti, manga e chi più ne ha, più ne metta.&lt;/p&gt;
+
+&lt;p&gt;Insomma, in questo luogo virtuale al limite dell’&lt;em&gt;esoterico&lt;/em&gt; vive e prospera una comunità reale che ormai supera i 6 milioni di utenti e che non ha interesse a &lt;em&gt;vendersi&lt;/em&gt; per qualche click, like o condivisione.&lt;/p&gt;
+
+&lt;p&gt;Per provare l’esperienza di Mastodon non servono applicazioni (anche se ce ne sono molte), basta un browser. Se ti va di provare, questo è un invito che ti permetterà di seguirmi automaticamente: &lt;a href=&quot;https://mastodon.uno/invite/v2eUbTBm&quot;&gt;https://mastodon.uno/invite/v2eUbTBm&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ci vorrebbe un altro post per descrivere tutti i servizi di altissima qualità (tutti gratuiti) che accompagnano l’universo Mastodon (in particolare quelli mantenuti dal team di Devol - link in fondo alla pagina). Ci sono piattaforme di collaborazione, di discussione, di streaming, di blogging, di condivisione foto (in stile Instagram), video (in stile Youtube), codice sorgente (in stile GitHub).
+Una moltidudine di servizi, possibili grazie agli sviluppatori di software &lt;em&gt;*open source&lt;/em&gt; e alla preparazione e competenza di un manipolo di volontari.&lt;/p&gt;
+
+&lt;h2 id=&quot;sfide-e-opportunità&quot;&gt;Sfide e opportunità&lt;/h2&gt;
+
+&lt;p&gt;Certamente le sfide per questo piccolo mondo sono molte, e vedono in prima fila - come predatori naturali - i social network mainstream, seguiti dai detrattori per hobby e da quelli di professione. Quello che servirebbe per stabilizzare a far crescere questo microcosmo sarebbe &lt;em&gt;l’interesse e la partecipazione attiva&lt;/em&gt; al Fediverso di &lt;em&gt;organizzazioni pubbliche e private, del mondo accademico, di editori, delle Istituzioni&lt;/em&gt;, nell’ottica di costruire una federazione in cui ognuna di queste realtà possa curare la propria identità, presenza, comunicazione e servizi online con investimenti minimi e riassorbibili in termini di prestigio, senza appoggiarsi a piattaforme commerciali totalmente private, e le cui fortune, scivoloni e controversie possono dipendere da “stupefacenti” farneticazioni loro &lt;em&gt;patron&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Adesso è il momento, per le realtà più evolute e lungimiranti, di cogliere questa opportunità e &lt;em&gt;azzerare&lt;/em&gt; un divario dimensionale con i grandi player, che altrimenti diverrà talmente grande da schiacciare ogni nuova tecnologia o iniziativa di liberarsene. La trasformazione da &lt;em&gt;attori della comunicazione&lt;/em&gt; a &lt;em&gt;consumatori di gettoni di visibilità&lt;/em&gt; è una umiliazione che io, fossi un editore, mi risparmierei.&lt;/p&gt;
+
+&lt;h2 id=&quot;link-per-approfondire&quot;&gt;Link per approfondire&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;ActivityPub è un protocollo raccomandato e convalidato da W3C. &lt;a href=&quot;https://activitypub.rocks/&quot;&gt;https://activitypub.rocks/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mastodon.uno è l’istanza Mastodon più gande d’Italia. Ma chi sono? &lt;a href=&quot;https://noblogo.org/unosocial/chi-siamo&quot;&gt;https://noblogo.org/unosocial/chi-siamo&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Devol è un gruppo di volontari appassionati e votati al web libero. &lt;a href=&quot;https://devol.it/&quot;&gt;devol.it&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;“Difficoltosamente” non tanto per l’azione in sé, ma perché è estremamente complicato, anche per uno che non è a digiuno di &lt;em&gt;workflow automation&lt;/em&gt;, riassociare i testi e le immagini caricate. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Mastodon è un social network &lt;em&gt;non posseduto&lt;/em&gt; da nessuno di specifico, ma è costituito da numerosi &lt;em&gt;server&lt;/em&gt; (detti &lt;em&gt;istanze&lt;/em&gt;) gestiti per lo più da volontari, sostenuti da donazioni (a cui contribuisco più che volentieri), senza alcuna forma di pubblicità, che sono tra loro &lt;em&gt;federati&lt;/em&gt;, ovvero che aderiscono a linee guida e di condotta comunemente concordate e che adottano lo stesso protocollo (chiamato &lt;em&gt;ActivityPub&lt;/em&gt;). L’insieme dei servizi che utilizzano questo protocollo è chiamato genericamente &lt;em&gt;Fediverso&lt;/em&gt;. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Fri, 05 May 2023 00:00:00 +0200</pubDate>
+        <link>https://77nn.it/2023/05/05/mastodon-fediverso-web-alternativo.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/05/mastodon-fediverso-web-alternativo.html</guid>
+        
+        <category>social</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Controllo hash da menu contestuale</title>
+        <description>&lt;p&gt;Molti &lt;em&gt;publisher&lt;/em&gt; di software &lt;strong&gt;FOSS&lt;/strong&gt; offrono la possibilità di verificare l’integrità dei pacchetti software scaricati dai loro siti web. Questa è anche una comune pratica di &lt;strong&gt;Data Integrity&lt;/strong&gt; adottata nell’Industria per garantire che un file non sia stato alterato dopo la sua &lt;em&gt;emissione&lt;/em&gt; o &lt;em&gt;approvazione&lt;/em&gt; formale.&lt;/p&gt;
+
+&lt;p&gt;Questa verifica è ottenuta con un meccanismo di &lt;em&gt;disaccoppiamento&lt;/em&gt; delle sicurezze logiche o delle liste di accesso tra la posizione del &lt;strong&gt;checksum&lt;/strong&gt; del file e quella del file stesso.&lt;/p&gt;
+
+&lt;p&gt;In questo scenario se un &lt;em&gt;malicious party&lt;/em&gt; riuscisse ad assumere il controllo della posizione del file e riuscisse ad alterarlo, non avrebbe la possibilità di alterare anche il &lt;em&gt;checksum&lt;/em&gt; o &lt;strong&gt;hash&lt;/strong&gt; (in un’altra posizione e protetto con diverse credenziali) per farlo apparire &lt;em&gt;legittimo&lt;/em&gt;; il controllo del &lt;em&gt;checksum&lt;/em&gt;, in casi come questo, fallirebbe e darebbe all’utilizzatore un chiaro segnale di attenzione.&lt;/p&gt;
+
+&lt;p&gt;Non sono molto esperto di &lt;em&gt;Linux&lt;/em&gt;, ma immagino che sia piuttosto semplice mettere in piedi un automatismo in grado di verificare il checksum dei file scaricati… quindi mi limiterò a suggerire una soluzione che possa funzionare comodamente su &lt;strong&gt;Windows&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Su Windows abbiamo a disposizione &lt;strong&gt;Powershell&lt;/strong&gt; che ci può aiutare a risolvere il problema rapidamente. Il comando che utilizzeremo per ottenere il &lt;em&gt;checksum&lt;/em&gt; di un file è il seguente:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+get-filehash &amp;lt;filepath&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ma utilizzato aprendo la console di Powershell e inserendo il nome del file manualmente non sembra particolarmente comodo; inoltre l’&lt;em&gt;output&lt;/em&gt; del comando sarebbe una lunga stringa esadecimale che dovremo manualmente controllare carattere per carattere.&lt;/p&gt;
+
+&lt;p&gt;A questo punto sarebbe più utile e rapido automatizzare un po’ di cose per facilitarci il compito, e lo faremo scrivendo uno script. Vogliamo passare come argomenti allo script sia il file da esaminare che il checksum da verificare. Se il risultato non fosse quello atteso vogliamo che lo script modifichi il file in modo da non consentirne l’apertura con applicazioni predefinite o anche l’esecuzione. Occorre osservare che si dovrà avere accesso al file in modifica.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+
+# Vogliamo che lo script chieda l&apos;hash da verificare
+$targetHash = (Read-Host &quot;Inserire l&apos;hash SHA-256 per il file  $($Args[0])&quot;).ToUpper()
+
+# Vogliamo che il primo argomento passato allo script sia
+# intrerpretato come il percordo di un file da controllare
+$actualHash = ([string] (Get-FileHash $Args[0]).hash).ToUpper()
+
+# Controlliamo se i due hash corrispondono o meno
+if (-not($targetHash -eq $actualHash)){
+
+    # In questo caso NON corrispondono
+    &quot;L&apos;hash fornito NON corrisponde a quello ricavato dal file.&quot;
+
+    # Vogliamo che lo script ci chieda se vogliamo modificare
+    # l&apos;estensione del file chiamandolo &quot;.check&quot;.
+    # In questo modo non potremo aprire il file con una applicazione
+    # di default né eseguirlo per errore.
+    if ((Read-Host &quot;Vuoi impedire l&apos;apertura del file $($Args[0]) ?&quot;).ToUpper() -in (&quot;S&quot;, &quot;SI&quot;, &quot;CERTO&quot;, &quot;OK&quot;, &quot;YES, &quot;Y&quot;)){
+
+       Rename-Item ($Args[0]) -NewName ($Args[0].check)
+
+    }
+
+} else {
+
+    &quot;L&apos;hash fornito corrisponde a quello ricavato dal file.&quot;
+
+}
+
+# Questo codice è rilasciato sotto licenza Creative Commons Zero (CC0) 
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;A questo punto salviamo lo script con nome &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;checkhash.ps1&lt;/code&gt; e siamo a posto.&lt;/p&gt;
+
+&lt;h2 id=&quot;-oppure-no&quot;&gt;… oppure no?&lt;/h2&gt;
+
+&lt;p&gt;A qeusto punto dobbiamo sempre aprire la console di Powershell e chiamare lo script per l’esecuzione, e dunque siamo ancora lontani dalla desiderata semplicità d’uso. Non sarebbe molto più comodo se questo script fosse a disposizione sul menu contestuale del File Explorer e ottenesse automaticamente dal file selezionato il percorso da controllare?&lt;/p&gt;
+
+&lt;p&gt;Per ottenere questa &lt;em&gt;magia&lt;/em&gt; apriamo il registro di Windows (regedit) e cerchiamo la chiave
+&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;HKEY_CLASSES_ROOT\*\shell&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Questa chiave contiene i comandi disponibili dal menu contestuale quando è selezionato un file su File Explorer. È piuttosto semplice creare una sotto-chiave con il comando che vogliamo visualizzare e la &lt;em&gt;riga di comando&lt;/em&gt; da eseguire. (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REG_SZ&lt;/code&gt;) to an expandable string (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REG_EXPAND_SZ&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;…Ma facciamo un passo indietro e vediamo il processo passo per passo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Prima di tutto&lt;/strong&gt; dobbiamo creare una chiave per la voce di menu contestuale, più una sotto-chiave che contenga il comando vero e proprio&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+HKEY_CLASSES_ROOT\*\shell
+                         \MyCustomKey
+                                     \command
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Nella chiave &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MyCustomKey&lt;/code&gt; il valore di defaul deve solo contenere la voce di menu; qualcosa del tipo:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Name: (Default)
+Type: REG_SZ
+Value: Check Hash SHA-256
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Per questo abbiamo bisogno di creare un file &lt;em&gt;.reg&lt;/em&gt; con queste istruzioni:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\*\shell\CheckHash]
+@=&quot;Check Hash SHA-256&quot;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;In secondo luogo&lt;/strong&gt;, all’interno della sottochiave &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;command&lt;/code&gt; dobbiamo inserire la riga di comando, adottando un trucco.&lt;/p&gt;
+
+&lt;p&gt;Creiamo semplicemente un nuovo valore come indicato:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Name: TEMP
+Type: REG_EXPANDABLE_SZ
+Value: &quot;Powershell.exe&quot; -file &quot;&amp;lt;script path&amp;gt;\checkhash.ps1&quot; &quot;%1&quot;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Nota:&lt;/em&gt; il parametro &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;%&quot;1&lt;/code&gt; è quello che dice alla shell che il file selezionato allapertura del menu contestuale è quello che viene &lt;em&gt;passato&lt;/em&gt; come argomento allo script.&lt;/p&gt;
+
+&lt;p&gt;Dal momento che non si può cambiare il &lt;em&gt;Value type&lt;/em&gt; di un valore quando il suo tipo è un &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;REG_EXPANDABLE_SZ&lt;/code&gt;, abbiamo bisogno di trovare un modo per farlo. Possiamo semplicemente esportare la chiave di registro appena creata e aprirla con un editor di testo. Troveremo qualcosa di simile:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[HKEY_CLASSES_ROOT\*\shell\CheckHash\command]
+TEMP=hex(2):22,00,43,00,3a,00,5c,00,[e una lunga sequenza di valori esadecimali]
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Semplicemente sostituiamo il nome &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TEMP&lt;/code&gt; con un carattere &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@&lt;/code&gt;, che indica sempre il valore di default della sotto-chiave &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;command&lt;/code&gt;. Possiamo salvare il file e ricaricarlo sul registro senza toccare la lunga sequenza di cifre esadecimali.&lt;/p&gt;
+
+&lt;h2 id=&quot;ta-daan&quot;&gt;Ta-daan!&lt;/h2&gt;
+
+&lt;p&gt;Seguendo questa sorta di &lt;em&gt;guida&lt;/em&gt; che ho descritto potete aggiungere qualunque comando personalizzato al menu contestuale per svolgere i compiti più disparati.&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash&quot;&gt;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 May 2023 00:00:00 +0200</pubDate>
+        <link>https://77nn.it/2023/05/01/Verifica-hash-file-scaricati.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/01/Verifica-hash-file-scaricati.html</guid>
+        
+        <category>tech</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>(R)Esistiamo!</title>
+        <description>&lt;p&gt;Non c’ero. E non sono nemmeno sicuro, se fossi stato vivo e vegeto, da che parte mi sarei schierato. Avrei preferito il privilegio riservato ai collaborazionisti del regime fascista, accantonando ogni dignità e senso di giustizia per favorire la sopravvivenza e il benessere della mia famiglia, o avrei imbracciato il fucile e sarei andato a fare la Resistenza, abbracciando un ideale che poteva portare alla tortura e alla morte mia e di tutti i miei cari?&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/DALL-E 2023-04-25 09.59.29.png&quot; alt=&quot;Una bandiera italiana stracciata e sporca, che sventola fiera.&quot; /&gt;
+&lt;figcaption&gt;Una bandiera italiana stracciata e sporca, che sventola fiera. Non c&apos;è ideale che possa restare immacolato quando lo si brandisce contro i nostri simili. Immagine generata da I.A.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Una scelta difficile, se la vediamo con gli occhi di oggi abituati all’abbondanza, alla non-violenza, a Netflix e alla “demeritocrazia”. Ma era una scelta semplice, per chi non aveva molto da perdere? Si può decidere di abbandonare ogni speranza di vita pacifica, per quanto povera, per combattere imparimente chi è addestrato, ha gli equipaggiamenti e controlla il territorio?&lt;/p&gt;
+
+&lt;p&gt;E molti infatti morirono. Atrocemente. Non credo che molti di loro avessero la visione di un futuro “Paese Liberato”, in pochi forse conoscevano quella nozione di “Patria” sì cara a chi la vendette al nemico e la distrusse con ogni mezzo. Forse allora la Patria non è una visione assoluta, elevata, un ideale puro. Forse la Patria è solo la nostra casa, il nostro orticello, l’orticello del nostro compare di briscola, i nostri quartini di vino messi in palio tra irriverenze, parolacce e oscenità. Una Patria che ha più valore e porta con sé molti più ricordi e nostalgie di un simbolo o di un colore politico.&lt;/p&gt;
+
+&lt;p&gt;Diedero la vita come, forse, non saprei fare. E per questo meritano il rispetto di tutti, anche delle loro vittime, perché sono riusciti dove loro hanno fallito. Ed è questo che oggi dirò alle mie figlie, aprendo anche per i nostri partigiani una buona bottiglia di vino.&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 25 Apr 2023 00:00:00 +0200</pubDate>
+        <link>https://77nn.it/2023/04/25/(R)Esistiamo.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/04/25/(R)Esistiamo.html</guid>
+        
+        <category>ethics</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Plain text rocks!</title>
+        <description>&lt;p&gt;Da anni utilizzo un normale editor di testo (o meglio, una versione “superaccessoriata” di un editor di testo - link in fondo alla pagina) come principale strumento di lavoro. E il mio lavoro non è, principalmente, quello di scrivere codice. Quello che ho intrapreso è comunque un altro viaggio, non una meta che ho trovato, e il compromesso tra purezza e usabilità è sempre necessario.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/ASCII-DIAGRAM.png&quot; alt=&quot;È possibile usare strumenti online per generare semplici immagini e diagrammi utilizzando i soli caratteri ASCII&quot; /&gt;
+&lt;figcaption&gt;È possibile usare strumenti online (come ad esempio ASCIIFLOW o TEXTIK - link in fondo alla pagina) per generare semplici immagini e diagrammi utilizzando i soli caratteri ASCII.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Grazie a &lt;a href=&quot;https://mastodon.uno/@prealpinux&quot;&gt;@prealpinux&lt;/a&gt; ho trovato un interessante sito mantenuto per diversi anni da &lt;a href=&quot;https://scottnesbitt.online/&quot;&gt;Scott Nesbitt&lt;/a&gt; (link in fondo alla pagina). Il sito non è più mantenuto e il dominio scadrà a fine maggio 2023, il che è un peccato, ma questa è la volontà dell’autore, che ha comunque rilasciato tutto con licenza CC BY-NC-SA 4.0, rendendo possibile a chiunque lo desideri di portare avanti il progetto (no, non è mia intenzione!).&lt;/p&gt;
+
+&lt;h2 id=&quot;la-filosofia-del-contenuto&quot;&gt;La filosofia del contenuto&lt;/h2&gt;
+
+&lt;p&gt;Lo ammetto, ho sempre avuto una ossessione filosofica sulla distinzione tra ciò che è &lt;strong&gt;contenuto&lt;/strong&gt;, &lt;strong&gt;contenitore&lt;/strong&gt; e &lt;strong&gt;forma&lt;/strong&gt;. Ho sempre pensato che la cristallizzazione del pensiero in parole meritasse di possedere una &lt;em&gt;sostanza il più pura possibile&lt;/em&gt;, e il mondo digitale si avvicina molto alla mia idea di purezza: un testo costituito di simboli/entità/segni puri, universali, essenziali nella loro codifica digitale è l’idea che ho del contenuto perfetto.&lt;/p&gt;
+
+&lt;p&gt;Il contenuto non ha forma, se non linguistica, non ha &lt;em&gt;formattazione&lt;/em&gt;, non ha pagine né altre convenzioni editoriali o tipografiche. Solamente i segni delle parole, delle punteggiatura e degli spazi hanno posto nel mio concetto di contenuto. Tutto il resto è contenitore, oppure forma.&lt;/p&gt;
+
+&lt;p&gt;Un testo puro è contenuto in una pagina, ma solo se viene stampato, altrimenti è libero di fluire ininterrotto se non da paragrafi e punteggiature. La pagina è una prigione per il contenuto, che per sua natura è fluido, è libero. Gli ebook, ad esempio, incarnano questo concetto, rappresentano la realizzazione di questo dinamismo, in cui il numero di pagina è solo un indicatore della strada percorsa, non delle “coordinate” di una parola. Purtroppo sono formati che richiedono un interprete, spesso un pezzo di tecnologia proprietaria, o un mezzo-standard destinato a mille modifiche e poi all’abbandono.&lt;/p&gt;
+
+&lt;p&gt;La forma è invece, sostanzialmente, “un trucco” che si applica al contenuto. Un po’ di rossetto, un po’ di matita, e anche un testo con poco da dire diventa carino da vedere. Ordinato, giustificato, dalle forme aggraziate o “senza grazie”, da scegliere a seconda del contesto, del mood, o del blasone da indossare.&lt;/p&gt;
+
+&lt;h2 id=&quot;il-problema-della-data-retention&quot;&gt;Il problema della data retention&lt;/h2&gt;
+
+&lt;p&gt;Poi c’è anche un discorso più pratico. Quello della &lt;em&gt;sopravvivenza del contenuto alla tecnologia&lt;/em&gt;. Le tecnologie invecchiano e vengono sostituite. Documenti salvati in formati proprietari di appena 20 o 30 anni fa possono non essere già più leggibili oggi, e persi per sempre. Pensiamo davvero che una base dati di 20 o 30 anni fa sia oggi facilmente leggibile? Probabilmente è persa per sempre se la tecnologia proprietaria che stava dietro a quella base dati è evaporata nella frenesia della &lt;em&gt;new-economy&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Un file di testo codificato in caratteri &lt;strong&gt;ASCII&lt;/strong&gt; o &lt;strong&gt;UNICODE&lt;/strong&gt;, invece, sarà con buona probabilità sempre leggibile da qualunque sistema informatico umano da qui alle prossime centinaia di anni: troppa “fondazione” di dati, configurazioni, file di appoggio è basata su file di testo semplice da pensare che una rivoluzione informatica la possa mai spazzare via completamente.&lt;/p&gt;
+
+&lt;h2 id=&quot;e-in-pratica&quot;&gt;…e in pratica?&lt;/h2&gt;
+
+&lt;p&gt;Ma come è possibile usare un semplice editor di testo per fare quello che normalmente facciamo utilizzando decine di applicazioni differenti? Beh, ovviamente non tutti i workflow sono adatti ad essere trasferiti sul “blocco note”: &lt;strong&gt;spreadsheet&lt;/strong&gt; e &lt;strong&gt;presentazioni&lt;/strong&gt; sono probabilmente fuori scopo per le acrobazie più complesse, ma non così tanto: i fogli e le tabelle di excel possono essere esportati e mantenuti al riparo dal software proprietario in testo semplice, così come è possibile inserire le “note del relatore” da un documento di partenza in testo semplice quando viene trasformato in una presentazione. Un sito web è fatto di &lt;strong&gt;pagine HTML&lt;/strong&gt;, &lt;strong&gt;CSS&lt;/strong&gt; e &lt;strong&gt;JavaScript&lt;/strong&gt; che sono file di testo semplice, e può essere interamente esportato su un file di &lt;strong&gt;feed XML&lt;/strong&gt; che è anch’esso un file di testo di relativamente semplice fruizione. Questo sito è interamente scritto in testo semplice, utilizzando il framework &lt;strong&gt;Jekyll&lt;/strong&gt; (che configuro attraverso file di testo) per crearne attorno il contenitore e la forma desiderata.&lt;/p&gt;
+
+&lt;p&gt;Quindi ripensiamoci un minuto. Davvero ci servono così tante applicazioni quando il tutto si può sempre ridurre, a scopo di interoperabilità, ad un semplice file di testo? E se adottassimo dei workflow più naturali, più focalizzati sul contenuto che sul contenitore e sulla forma? Non riusciremmo ad &lt;em&gt;applicare più qualità al nostro lavoro&lt;/em&gt; e pensare al “trucco” solo come “tocco finale”?&lt;/p&gt;
+
+&lt;p&gt;Il sito di Scott, che ho citato all’inizio del post offre numerosissimi spunti grazie a &lt;em&gt;template&lt;/em&gt;, &lt;em&gt;trucchi&lt;/em&gt;, &lt;em&gt;procedure&lt;/em&gt; per trasformare testo grezzo in PDF, siti web, e file più ricchi. Non ho intenzione di proseguire la sua &lt;em&gt;legacy&lt;/em&gt;, ma condividerò di tanto in tanto qualche spunto pratico che ho trovato particolarmente utile.&lt;/p&gt;
+
+&lt;p&gt;Grazie a al prossimo post!&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Applicazione &lt;a href=&quot;https://notepad-plus-plus.org/&quot;&gt;Notepad++&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Sito web di Scott Nesbitt &lt;a href=&quot;https://plaintextproject.online&quot;&gt;plaintextproject.online&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Applicazione online &lt;a href=&quot;https://asciiflow.com/&quot;&gt;AsciiFlow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Applicazione online &lt;a href=&quot;https://textik.com/&quot;&gt;Texttik&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Sito web &lt;a href=&quot;https://home.unicode.org/&quot;&gt;Unicode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 24 Apr 2023 00:00:00 +0200</pubDate>
+        <link>https://77nn.it/2023/04/24/Plain-text-rocks.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/04/24/Plain-text-rocks.html</guid>
+        
+        <category>tech</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Password: che casino!</title>
+        <description>&lt;p&gt;Questo articolo non parte da premesse tecniche né prende in esame analisi comportamentali. Sono per lo più considerazioni - oso dire - etico/filosofiche sulla natura di ciò che protegge le nostre informazioni personali, nel momento in cui le affidiamo a servizi online.&lt;/p&gt;
+
+&lt;p&gt;Le nostre informazioni personali sono preziose. E non parlo delle informazioni cosiddette “sensibili”, ancor più preziose, bensì anche solo delle informazioni di base, come nome e cognome.
+Con il nostro nome e cognome, ad esempio, siamo riconosciuti sui social network, dove altre persone utilizzano queste “credenziali” per fidarsi di noi e comunicarci a loro volta altre informazioni personali. Non c’è modo di sapere se i destinatari delle comunicazioni sono effettivamente quelli che entrambe le parti si aspettano, ma grazie ad altri segnali (indirizzo email, numero di telefono, città di residenza, scuola frequentata, anno di nascita) siamo più o meno in grado di individuare con un buon grado di confidenza se quel “Mario Rossi” nel mezzo ad un elenco lunghissimo è davvero il nostro compagno di classe delle scuole medie o no. Ecco, abbiamo già elencato una serie di informazioni grazie a cui un esperto di social engineering potrebbe guadagnare la nostra fiducia e indurci a fornirgli molte altre informazioni. Non allo scopo di truffare noi in prima persona, ma magari per arrivare ad un’altra persona che costituisca per il social engineer il bersaglio finale.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/DALL-E 2023-02-19 11.23.18.png&quot; alt=&quot;Victorian painting of an englishman typing a long password on a screen - AI Generated image&quot; /&gt;
+&lt;figcaption&gt;Raro dipinto di epoca vittoriana di uomo che inserisce una password su uno schermo - Immagine generata da IA&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;La protezione dei nostri profili social, o di quelli ben più critici dei servizi online (home banking, cassetto fiscale o cartella sanitaria elettronica, per citarne alcuni tra i più noti e utilizzati) da manomissione, accesso fraudolento o furto di identità, rappresenta uno sforzo che dobbiamo tutti sostenere per ridurre il rischio di truffe online rivolte verso di noi o verso nostri cari.&lt;/p&gt;
+
+&lt;p&gt;In generale tutti gli account di cui disponiamo sono protetti da un meccanismo di autenticazione semplice, come le &lt;strong&gt;password&lt;/strong&gt;, che altro non sono che “combinazioni” di casseforti più o meno difficili da scassinare. Laddove le informazioni contenute nei servizi sono via via più importanti, si aggiungono strati ulteriori di sicurezze, facendo assumere al tutto il nome di &lt;strong&gt;multi-factor authentication&lt;/strong&gt;. Alla password, che è &lt;em&gt;qualcosa che sai&lt;/em&gt;, si aggiungono fattori fisici (come una smartcard o una chiave hardware - &lt;em&gt;qualcosa che hai&lt;/em&gt;) o biometrici (&lt;em&gt;qualcosa che sei&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;L’accesso ai nostri dati personali può dunque essere protetto in modo progressivo da strati di sicurezze eterogenee che è difficile compromettere nello stesso momento.&lt;/p&gt;
+
+&lt;p&gt;Ricordo che qualche anno fa fece scalpore un caso di cronaca negli Stati Uniti, quando le autorità chiesero al produttore dello smartphone di un imputato (deceduto) di bypassare il codice personale che proteggeva il suo telefono per accedere ai dati contenuti nella memoria. La casa madre si rifiutò (probabilmente non per incapacità, ma per opportunità pubblicitaria) e i dati, protetti da una semplice password, non poterono essere utilizzati.&lt;/p&gt;
+
+&lt;p&gt;Questo episodio mi portò, e tutt’ora mi porta, a riflettere sulla &lt;strong&gt;legittimità&lt;/strong&gt; di una tale richiesta. Credo di essere propenso verso l’illegittimità di una tale forma di coercizione, partendo dal presupposto che nessuno può legittimamente pretendere che una qualunque persona, criminale o meno, esponga il proprio pensiero più intimo, le proprie motivazioni, i propri giudizi. Fermo restando il &lt;em&gt;diritto&lt;/em&gt; di esprimere tutti questi contenuti nei modi e nelle forme desiderate, non lo si può imporre. Ed accedere ad un dispositivo in grado di contenere le chiavi di lettura di questi contenuti privati e personali rappresenta per me il medesimo abuso.&lt;/p&gt;
+
+&lt;p&gt;Questo discorso serve come ponte per affrontare un trend che sento ricorrere sempre pià spesso nei &lt;em&gt;talks&lt;/em&gt; tecnologici, ovvero l’avvento dell’autenticazione &lt;strong&gt;passwordless&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Passwordless, significa “senza password”. Qualunque sia l’implementazione tecnica, utilizzando questa forma di autenticazione non si è tenuti ad inserire una password per poter accedere alle informazioni contenute nei “vault”.&lt;/p&gt;
+
+&lt;p&gt;Il motivo ufficiale di tali implementazioni è semplice: ricordare numerose password di buona complessità è un compito pressoché impossibile per cervelli normodotati, pertanto utilizzando una qualche meccanica ibrida tra dispositivi e dongle (fisici e/o biometrici) si ritiene non migliorativo l’utilizzo di una password. Questo metterebbe ordine e darebbe più tranquillità a chi fa un uso disordinato di credenziali e password, e il mercato premia chi conta di risolvere questo disagio.&lt;/p&gt;
+
+&lt;p&gt;È possibile che studi statistici suggeriscano che la complessità media delle password è così bassa che non aggiunga alcun grado di complessità crittografica alla sicurezza alle altre componenti; non posso né voglio confutare questi studi, ma non è di complessità crittografica che stiamo parlando: sappiamo tutti che non esiste un grado di complessità così alto da non poter essere compromesso con il dovuto tempo e le dovute risorse a disposizione. Parliamo invece di possibilità di accesso istantaneo (ed economico) a tali informazioni senza la componente volontaria del legittimo proprietario di tali informazioni.&lt;/p&gt;
+
+&lt;p&gt;Le password, per quanto rappresentino l’antico concetto della “combinazione”, sono in ogni caso l’unico metodo di autenticazione che, a mio avviso, esprime una &lt;strong&gt;VOLONTÀ&lt;/strong&gt; di utilizzare una chiave che si possiede &lt;em&gt;solo nella propria mente&lt;/em&gt;. La chiave fisica esprime invece il &lt;em&gt;POSSESSO&lt;/em&gt; (ma non necessariamente la &lt;em&gt;PROPRIETÀ&lt;/em&gt;) del mezzo per accedere, mentre il biometrico esprime la &lt;em&gt;PRESENZA&lt;/em&gt; di fronte alla serratura (o, analogamente, la &lt;em&gt;COERCIZIONE&lt;/em&gt; fisica di fronte alla serratura). La mancanza però della sola password tra questi tre meccanismi è qualcosa di molto pericoloso, perché prescinde dalla manifestazione di volontà.&lt;/p&gt;
+
+&lt;p&gt;Si può obiettare che anche l’espressione della password può essere forzata da circostanze più o meno legittime (come la prospettiva di una imputazione, o una minaccia alla sicurezza fisica propria o dei propri cari), ma &lt;strong&gt;rappresenta comunque una SCELTA&lt;/strong&gt; per l’individuo. Non avere più l’autorità su questa scelta &lt;strong&gt;rappresenta invece una delega alla sicurezza&lt;/strong&gt; che si affida alla buona fede, all’indipendenza, all’incorruttibilità e al rispetto delle condizioni di contratto di qualcun altro.&lt;/p&gt;
+
+&lt;p&gt;Con questo non voglio dire che non ci siano &lt;em&gt;use case&lt;/em&gt; in cui sia una pratica più che accettabile, in base alla natura o alla criticità delle informazioni protette. È però necessario che sia presente la consapevolezza di una tale delega e dei suoi limiti.&lt;/p&gt;
+
+&lt;p&gt;Piuttosto che investire in sistemi di “minor tutela” io procederei invece in senso opposto, verso sistemi che implementino &lt;em&gt;duress code&lt;/em&gt; o meccanismi di &lt;strong&gt;deniable encryption&lt;/strong&gt;: rendere più solido il meccanismo della manifestazione di volontà anziché renderlo quasi del tutto superfluo.&lt;/p&gt;
+
+&lt;p&gt;Vedremo se il mercato deciderà di premiare (come penso accadrà, dietro anche la forte spinta di numerose autorità nazionali non democratiche, e anche di qualche c.d. &lt;em&gt;grande democrazia&lt;/em&gt;) la &lt;em&gt;passwordlessness&lt;/em&gt; oppure no, ma credo che sia comunque una buona idea dotarsi di un buon password manager e imparare ad utilizzarlo nel suo pieno potenziale (a tal proposito consiglio &lt;a href=&quot;https://bitwarden.com/&quot;&gt;BitWarden&lt;/a&gt; o una sua istanza pubblica come &lt;a href=&quot;https://vaultwarden.devol.it&quot;&gt;VaultWarden&lt;/a&gt;).&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 19 Feb 2023 00:00:00 +0100</pubDate>
+        <link>https://77nn.it/2023/02/19/Password-che-casino.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/02/19/Password-che-casino.html</guid>
+        
+        <category>ethics</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Scripting sicuro con Powershell</title>
+        <description>&lt;p&gt;Lo scripting è una pratica comune nel mondo IT: consente di svolgere molte oprazioni rapidamente e in modo ripetibile su una grande quantità di piattaforme alla volta. Ma comporta anche dei rischi, soprattutto nel caso di script articolati, quando il tecnico è ancora un po’ troppo verde, o quando si utilizzano componenti di terze parti scarsamente documentati o contenenti bug non noti. In questo post mi riferisco esclusivamente a scripting in ambiente Windows, conoscendolo piuttosto bene nelle sue diverse sfumature e dialetti.&lt;/p&gt;
+
+&lt;p&gt;In omaggio questo sfondo per desktop, così tanto per entrare nel mood!&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/Shell.svg&quot; alt=&quot;Desktop background image recalling Powershell logo and colors - CC-BY-4.0&quot; /&gt;
+&lt;figcaption&gt;Sfondo per desktop che richiama il logo di Powershell. Immagine originale rilasciata sotto licenza &lt;a rel=&quot;license&quot; href=&quot;https://creativecommons.org/licenses/by/4.0/&quot; target=&quot;_blank&quot;&gt;CC-BY-4.0&lt;/a&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Non sarebbe una esagerazione affermare che gli ambienti di produzione, in aziende di qualunque dimensione, si reggono in piedi grazie allo scripting. A guardare bene si trova di tutto: i potenti .bat, dall’aspetto arcano e dal sapore metallico; i fantastici e libertini .vbs, con cui poter fare perfino il caffé; i sottovalutati .hta, veri precursori delle Universal App; e così via, scarrellando veloce attraverso JS, Python, Ruby e relativi interpreti in numerose versioni… e chi più ne ha, più ne metta. Sono però ormai diversi anni che Microsoft ha introdotto l’ambiente di scripting più potente e versatile di sempre: Powershell. Inizialmente guardato con diffidenza, è riuscito a guadagnare sempre più fiducia ed è ormai lo standard per sistemi operativi Windows. Certo, richiede studio e attenzione perché il didsastro è dietro l’angolo.&lt;/p&gt;
+
+&lt;p&gt;Potrà apparire come un monito eccessivamente allarmista, ma posso sostenerlo con numerosi esempi senza timore di smentita… è per questo motivo che ho deciso di mettere su carta le precauzioni che raccomando di adottare nelle organizzazioni che fanno largo uso di scripting Powershell.&lt;/p&gt;
+
+&lt;p&gt;Il testo, che ho caricato su Codeberg con licenza CC-BY-4.0, è liberamente scaricabile e stampato occupa tra 10 e 15 pagine… la mia speranza è di riuscire a raffinarlo sempre di più nel tempo.&lt;/p&gt;
+
+&lt;p&gt;Lo trovate qui: &lt;a href=&quot;https://codeberg.org/77nn/LineeGuidaPowershell&quot;&gt;https://codeberg.org/77nn/LineeGuidaPowershell&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Il testo si rivolge a sviluppatori giovani, o alle prime armi, che hanno compreso la portata e le caratteristiche di Powershell e che non hanno l’arroganza di pensare che a loro non serva. Ovviamente se sei uno sviluppatore più smaliziato ed esperto lo troverai piuttosto scarno o avrai rimostranze e distinguo… ebbene questo testo è in un repository pubblico dove la collaborazione è possibile: fallo!&lt;/p&gt;
+
+&lt;p&gt;Buona lettura!&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 27 Jan 2023 00:00:00 +0100</pubDate>
+        <link>https://77nn.it/2023/01/27/Scripting-Sicuro-Powershell.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/01/27/Scripting-Sicuro-Powershell.html</guid>
+        
+        <category>tech</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Sul Comando: autorità e responsabilità</title>
+        <description>&lt;p&gt;C’è una sottile differenza tra la parola &lt;em&gt;gestire&lt;/em&gt; e la parola &lt;em&gt;governare&lt;/em&gt;. E, a seconda dell’ambito a cui si applica, le differenze possono emergere più o meno chiaramente. Questa differenza è puttosto evidente nello sport, nella politica e anche nella vita familiare.
+Non vale la pena scomodare una Treccani o la Crusca per ottenere una definizione su cui basare il mio discorso… piuttosto vorrei dare un significato a questi due termini facendo una similitudine con un tipo di organizzazione che mi è abbastanza familiare, cioè una nave.&lt;/p&gt;
+
+&lt;p&gt;Tutti sappiamo che una nave ha un Comandante e un Comandante in seconda, una sorta di vice-comandante. Una “sorta”, ma non proprio.
+I compiti che si dividono queste due figure sono profondamente diversi. Il Secondo è un Manager delle risorse della nave. Dispensa incarichi, controlla l’ordine, la disciplina dell’equipaggio e l’efficienza della piattaforma.&lt;/p&gt;
+
+&lt;p&gt;Il Comandante, dal canto suo, è un Governatore. Rappresenta l’autorità del Comando, indica le direttive e gli obiettivi che tutto l’equipaggio, Secondo compreso, devono prodigarsi per raggiungere.&lt;/p&gt;
+
+&lt;p&gt;Ammetto che la nomenclatura che utilizziamo in Italiano può essere fuorviante. Gli inglesi probabilmente ci avevano già pensato a queste differenze sostanziali, e per questo non hanno un Comandante in seconda, ma un Primo e un Secondo Ufficiale dopo il Comandante. Non sono cioè dei “vice”, ma ruoli totalmente diversi.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/Picard-Riker.webp&quot; alt=&quot;Picard and Riker from Star Trek sci-fi fiction meet their eyes&quot; /&gt;
+&lt;figcaption&gt;Picard e Riker, Star Trek. &lt;span rel=&quot;License&quot;&gt;Tutti i diritti riservati ViacomCBS&lt;/span&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Tanto diversi che non c’è una scuola che ti insegna a diventare un buon Comandante. In Marina c’è qualcosa che viene chiamata informalmente “Scuola Comando”, il cui scopo non è insegnare a Comandare, ma far capire che esistono responsabilità uniche e non delegabili che ricadono su un Comandante e solo su di lui. Ricordate il test della &lt;em&gt;Kobayashhi-maru&lt;/em&gt; di Star Trek? Più o meno si tratta di quello: far capire che ovunque ci sia esercizio di autorità, ovvero una &lt;em&gt;decisione&lt;/em&gt;, c’è una grande responsabilità, e che il lieto fine è solo una eventualità.&lt;/p&gt;
+
+&lt;p&gt;Quindi per il momento abbiamo stabilito che il comando è assunzione di Responsabilità, e non è poco, dal momento che questa Responsabilità è l’origine anche dell’Autorità.&lt;/p&gt;
+
+&lt;p&gt;Come per le navi, la stessa cosa vale anche per il governo del Paese, o per una dirigenza aziendale. Sono passati i tempi in cui il comando veniva concesso dalla divinità, o dal sangue reale. L’Autorità, o meglio la Responsabilità, è concessa da chi subisce le conseguenze del Governo: i passeggeri, i cittadini, gli investitori, e l’atto di tale concessione è basato sulla fiducia, sulle qualità morali e sulla traccia storica della provata capacità di successo nelle imprese passate. Quando vedete il vincitore delle elezioni esultare, state guardando, la maggior parte delle volte, un coglione che non ha capito la situazione. Salvo poi riprendersi pian, pianino, ed entrare nel ruolo con più cautela di quello che si sarebbe stati pronti a scommettere.&lt;/p&gt;
+
+&lt;p&gt;Ma perché? Perché, come dicevo poc’anzi, &lt;em&gt;non c’è un manuale che spieghi come governare&lt;/em&gt;. Ci sono però innumerevoli studi, tecniche, e pratiche che spiegano come “gestire” efficacemente. Ed è qui che comincia il grande equivoco; è qui che si comincia a confondere la gestione con il governo. È la mancanza di consapevolezza della responsabilità, che spinge chi è investito dell’autorità al puro esercizio della gestione.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Prendere iniziative è rischioso, doloroso, costoso, e cone ignote possibilità di riuscita&lt;/em&gt;, mentre gestire, cioè applicare tecniche provate, sicure, affidabili, è leggero, veloce, agile. Ma è anche una sorta di “falso ideologico”, dove si viola il mandato di responsabilità per esercitare la sola autorità. Ma una buona gestione non conduce ad alcun porto sicuro, non fa raggiungere alcun obiettivo. È pura conservazione e limitazione delle, comunque inevitabili, “perdite”.&lt;/p&gt;
+
+&lt;p&gt;È tutto qui, molto semplicemente. Vedo intorno a me tanta competenza di gestione, ma sempre troppo poca &lt;em&gt;governance&lt;/em&gt;. E il primo passo per una governance efficace e produttiva è l’assunzione di responsabilità: chiaro e semplice. Poi viene la convinzione nelle proprie scelte, la capacità di difenderle, e infine la (parziale e controlalta) cessione di autorità ai Manager.&lt;/p&gt;
+
+&lt;p&gt;Un Comandante non si cala le braghe davanti agli altri Comandanti, né tantomeno davanti ai propri ufficiali in seconda. Un Comandante sta in plancia, quando il mare è grosso, e affronta le onde. Un Comandante abbandona la nave per ultimo.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Jan 2023 00:00:00 +0100</pubDate>
+        <link>https://77nn.it/2023/01/15/Comando-autorita-e-responsabilita.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/01/15/Comando-autorita-e-responsabilita.html</guid>
+        
+        <category>worklife</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Abbracciamo le IA generative!</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;“[…] what we know for certain is that at some point in the early twenty-first century all of mankind was united in celebration. We marveled at our own magnificence as we gave birth to AI.”&lt;/em&gt; (Morpheus, The Matrix, 1999)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;In effetti, con i dovuti distinguo, possiamo guardare a &lt;em&gt;chatGPT&lt;/em&gt; e &lt;em&gt;Dall-E&lt;/em&gt; e ritrovarli nella profetica battuta di Morpheus. Ma le similitudini semantiche finiscono esattamente qui. In ogni caso, le cosiddette &lt;em&gt;AI generative&lt;/em&gt;, sono l’ultimo grido della tecnologia.&lt;/p&gt;
+
+&lt;p&gt;Qualche giorno fa in ufficio ci siamo soffermati a valutare (no! non “cazzeggiare”, “valutare”!) le risposte che la chat associata al modello di linguaggio forniva alle nostre domande più disparate, dalle risposte ai quiz alle richieste di commentare per noi degli script Powershell presi a caso. Ed effettivamente &lt;strong&gt;le risposte erano tutte, magicamente, corrette&lt;/strong&gt;. Non solo corrette, anche esaustive, perfettamente calibrate nel contesto della domanda, con spunti di approfondimento. Non sono un docente, anche se nella mia vita ho fatto anche quello, ma quelle sono le risposte che vorrei sentirmi dare alle interrogazioni… o quelle che, magari, solamente &lt;em&gt;somigliano&lt;/em&gt; a risposte corrette ed esaustive.&lt;/p&gt;
+
+&lt;p&gt;Ho letto un po’ di documentazione a riguardo e ho capito che si tratta di un &lt;strong&gt;modello di linguaggio&lt;/strong&gt; che &lt;em&gt;predice&lt;/em&gt; un &lt;em&gt;pattern&lt;/em&gt; di risposta “plausibile”. Inoltre è un modello che non è in grado di evolvere autonomamente all’aumentare del numero di interazioni, o di trovare da solo le sue nuove fonti e confutare le sue stesse fondazioni, ma è basato su un preciso &lt;em&gt;dataset&lt;/em&gt; di training (sorvolo sul nome che non ho voglia di andare a cercare, tanto non aggiunge nulla al discorso) di 500GB tra documenti, siti web, riviste, studi accademici, e via discorrendo, che può essere periodicamente aggiornato.&lt;/p&gt;
+
+&lt;p&gt;Questo significa che un certo numero di esseri umani ha compilato più o meno manualmente la lista di queste “fonti”, a loro volta generate da altri esseri umani con intelligenze “tradizionali”, e le ha date in pasto alla rete neurale. Questa ha, in modo eccezionalmente efficace, ingerito tutte queste informazioni (l’equivalente , un tanto al chilo, di 200.000 libri… un nonnulla, comunque, rispetto agli oltre 160 milioni di opere della Biblioteca del Congresso degli Stati Uniti, per dire), le ha analizzate, scomposte, rivoltate, ricomposte e organizzate per accedervi in maniera rapida e incredibilmente accurata.&lt;/p&gt;
+
+&lt;p&gt;Ma è tutto qui.&lt;/p&gt;
+
+&lt;p&gt;In tutta questa &lt;em&gt;magnificenza&lt;/em&gt;, l’IA non è in grado di &lt;em&gt;generare&lt;/em&gt; nessun concetto nuovo o estraneo. Non è in grado di stabilire connessioni non già scritte se non con il trucco della generazione procedurale pseudocasuale, non può formulare ipotesi, se non con artifici esterni introdotti consapevolmente o meno dall’umano che vi interagisce, &lt;strong&gt;non può immaginare esiti, implicazioni o prospettive&lt;/strong&gt;. E soprattutto può dare risultati inaspettati, non corretti o affetti da &lt;em&gt;pregiudizio&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ho letto qua e &lt;em&gt;preoccupazione&lt;/em&gt; tra le persone. Quelle che sono immotivatamente preoccupate per l’avvento del T800 e Skynet, quelle che sono inopportunamente preoccupate per la prospettiva di “furto” di professioni diciamo “intellettuali”, e quelle che a buon vedere sono spaventate dall’idea che una macchina possa esprimersi e comprendere le domande in modo molto più naturale di loro stesse.&lt;/p&gt;
+
+&lt;p&gt;Mi sento di rassicurare le prime due categorie. Skynet era molto più fantasiosa di Dall-E, e, nelle professioni “intellettuali”, l’aspetto fondamentale non è la capacità di ricercare o sintetizzare informazioni, bensì quella di &lt;strong&gt;generare opportunità&lt;/strong&gt; da un’insieme efficientemente organizzato di informazioni. E io vedo questa opportunità: ovvero smettere di perdere tempo a fare ricerche su Google, o sui libri, o sui manuali e iniziare a &lt;strong&gt;farsi le domande giuste&lt;/strong&gt;. Perché tutto questo non è altro che un altro raffinatissimo &lt;em&gt;motore di ricerca&lt;/em&gt;, dove tutto il superfluo è stato filtrato e sono rimasti i dati grezzi. A chi nega questa eventualità, ricordo che anche i motori di ricerca a indici tradizionali possono restituire risultati non rilevanti o contenuti errati alla sorgente. La cosa su cui concordiamo tutti, però, è che non si può essere 100% sicuri che le risposte siano quelle corrette; la differenza con un essere umano è che questi è 100% &lt;em&gt;accountable&lt;/em&gt; per le sue dichiarazioni. ChatGPT no. Un altro rischio che corriamo in questo primo momento è quello di prendere tutto per “buono”, grazie alla infamemente superficiale copertura mediatica che le è stata riservata dai media generalisti.&lt;/p&gt;
+
+&lt;p&gt;Ma se pensiamo ad un futuro dove l’accuratezza e la correttezza vengano in qualche modo irrobustite, dove venga indicata la fonte di ciascuna informazione (come una Wikipedia automaticamente aggiornata con ogni fonte ingerita dall’algoritmo), potrebbe essere la svolta, &lt;strong&gt;la liberazione dallo studio e dalla lettura&lt;/strong&gt; spesso infruttuosa, per poterci concentrare sulla &lt;em&gt;sostanza&lt;/em&gt; delle nostre passioni e professioni.&lt;/p&gt;
+
+&lt;p&gt;Tuttavia… tuttavia c’è un &lt;em&gt;ma&lt;/em&gt; enorme. E questo è rappresentato dal modo in cui altri esseri umani hanno creato le informazioni &lt;em&gt;originali&lt;/em&gt;, date in pasto alla macchina. Senza esseri umani che generino informazioni nuove, le macchine non potranno che continuare a riproporre “permutazioni” sulle stesse informazioni all’infinito. Se non diamo la possibilità all’umanità di crescere altre persone in grado di creare sempre più informazioni, giungeremo presto alla staganzione, all’appiattimento culturale, alla smussatura di ogni differenza, alla stasi. E questo, indipendentemente da qualunque IA.&lt;/p&gt;
+
+&lt;p&gt;Il nostro insegnante dovrà quindi continuare a pretendere dagli studenti lo stesso che ci aspettiamo da chatGPT, perché &lt;strong&gt;anche nostra mente deve essere addestrata&lt;/strong&gt; da libri, riviste, ricerche per poter sviluppare le capacità creative di base.&lt;/p&gt;
+
+&lt;p&gt;Quindi che differenza c’è?&lt;/p&gt;
+
+&lt;p&gt;C’è che noi da piccoli, e i nostri ragazzi oggi, non abbiamo trascurato mai il &lt;em&gt;gioco&lt;/em&gt;. Le risate e i giochi, fondazione della creatività, ci salveranno!&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Jan 2023 00:00:00 +0100</pubDate>
+        <link>https://77nn.it/2023/01/02/Abbracciamo-le-AI-Generative.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/01/02/Abbracciamo-le-AI-Generative.html</guid>
+        
+        <category>tech</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Asteroidi e colonne</title>
+        <description>&lt;p&gt;Sono una persona di struttura, con una buona attitudine al pensiero laterale, una discreta creatività e una velocità di apprendimento piuttosto elevata, ma non ho spirito imprenditoriale né di competizione. Non sono un “talento”, ma ho faticato e studiato molto per costruire negli anni le mie competenze. Posso dire che le mie basi sono solide, ma non sono “lanciato” in carriera. Sono probabilmente ciò che alcune organizzazioni chiamano &lt;strong&gt;&lt;em&gt;“solid contributor”&lt;/em&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/Hqood6rkQPPweH9F08PISVftmDqRIBckmzHKZd03.png&quot; alt=&quot;An asteroid impact absorbed by a column - AI Generated&quot; /&gt;
+&lt;figcaption&gt;Impatto di un asteroide assorbito da una colonna. Immagine generata da IA.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Vedo di tanto in tanto diversi &lt;em&gt;talenti&lt;/em&gt; sfrecciare come asteroidi, lasciando scie di incertezza e macerie, che poi quelli come me devono aggiustare, rinforzare, irrobustire. Siamo la &lt;del&gt;resist&lt;/del&gt; &lt;em&gt;resilienza&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;È un gioco di ruoli, dove entrambe queste categorie non hanno generalmente alcun interesse o necessità di sfidarsi. Che senso avrebbe per un &lt;em&gt;asteroide&lt;/em&gt; sfidare in velocità una colonna? Vincerebbe in ogni caso, forse pure in simpatia e in forma fisica. Eppure qualcuno sente la necessità di farlo e ti carica a testa bassa, ti mette alla prova, ti sfida. Inutile dire che la sfida non avrà mai luogo.&lt;/p&gt;
+
+&lt;p&gt;Qualche volta ho pensato che fosse un modo per cercare di stimolare all’azione, ad aumentare il ritmo, o addirittura a correre assieme per andare &lt;strong&gt;ancora più veloce&lt;/strong&gt;. Con la differenza che io non ho un appuntamento con il successo e che la mia realizzazione umana e professionale è intima, silenziosa, fatta di efficienza, ordine, simmetria e sincronia… cose che per molti potrebbero sembrare &lt;em&gt;noiose&lt;/em&gt;. Sono un piccolo orologiaio che prova a fare il suo modesto lavoro nel migliore dei modi, e che non sogna di costruire una Ferrari: sa che non ne ha i mezzi.&lt;/p&gt;
+
+&lt;p&gt;Sorvolo sui miei difetti da “colonna”, sono evidenti: dalla totale assenza di ambizione al cinico sarcasmo tangente alla sociopatia.&lt;/p&gt;
+
+&lt;p&gt;I talentuosi,invece, hanno tutti un unico grande difetto: devono forzare qualunque limite, andare sempre &lt;em&gt;all-in&lt;/em&gt;. A loro non interessa se dopo il loro veloce passaggio dalle tue parti i vetri delle case vanno in frantumi. Loro saranno passati, mentre tu dovrai raccogliere i cocci e spiegare perché si sono rotti. E così via, pazientemente.&lt;/p&gt;
+
+&lt;p&gt;Dove avranno da andare così veloci che non riescono nemmeno a guardarsi attorno? Quale viaggio vale la pena fare se non puoi cogliere un frutto, annusare un fiore o ammirare il paesaggio? Non lo so, forse da qualche parte ci sarà un traguardo abbastanza ricco e sfarzoso da farli fermare, così sontuoso che la mia immaginazione non riesce a concepire. Glielo auguro, saranno sfiniti dopo tutta la loro lunga corsa!&lt;/p&gt;
+
+&lt;p&gt;Un’ultima cosa, un consiglio: &lt;strong&gt;la colonna è dura&lt;/strong&gt;. Ma dura, dura, dura…&lt;/p&gt;
+
+&lt;p&gt;…caro asteriode, dammi retta, scansala!&lt;/p&gt;
+</description>
+        <pubDate>Thu, 24 Nov 2022 00:00:00 +0100</pubDate>
+        <link>https://77nn.it/2022/11/24/Asteroidi-e-colonne.html</link>
+        <guid isPermaLink="true">https://77nn.it/2022/11/24/Asteroidi-e-colonne.html</guid>
+        
+        <category>worklife</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Il grande disagio del 18 Novembre 2022</title>
+        <description>&lt;p&gt;Speravo di aver trovato una casa &lt;em&gt;social&lt;/em&gt; tranquilla, poco inquinata dal &lt;em&gt;trash mainstream&lt;/em&gt;. Mi stavo arredando il salotto, con cura e meditata lentezza, quando hanno fatto irruzione spaccando la porta a calci. Calci pesanti di anfibi impietosamente sporchi di fango.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/iqeuoiG5cn3ori3tJ6UE2clLixBLhtpOYRvA5zHv.png&quot; alt=&quot;A horde of haters invades a peaceful home - AI Generated&quot; /&gt;
+&lt;figcaption&gt;Un&apos;orda di haters invade una casa pacifica. Immagine generata da IA.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Sono entrati e hanno iniziato a spaccare mobili, quadri e libreria nello studio. Ho provato ad accogliere, a consigliare, a spiegare, a mettere a loro agio persone che nemmeno sapevano perché si trovavano lì.&lt;/p&gt;
+
+&lt;p&gt;Credevano che Twitter sarebbe stato chiuso entro la serata, qualcuno era davvero disperato, perso, incredulo. In molti si chiedono tutt’ora come fare per &lt;em&gt;trovare qualcuno da seguire&lt;/em&gt;. La più ingenua e diretta confessione dell’&lt;em&gt;incapacità di scegliere&lt;/em&gt; da soli ciò che vale e ciò che non vale la pena, il desiderio che qualcuno dica loro quale opinione avere, quali piatti provare, quali ristoranti preferire… e vivere all’ombra di questa pseudo-autorità accontentandosi di un opaco riflesso dell’accecante luce del sedicente &lt;em&gt;influencer&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Tanta tristezza e laica pietà. Sono sempre indeciso se sia eticamente corretto &lt;em&gt;spremere&lt;/em&gt; queste persone (un pò alla Wanna Marchi e Maestro Do Nascimiento) oppure no… ma questo è un altro discorso; ciò che ho fatto è stato cercare di accoglierli, consigliarli, rispondere ancora, ancora, ancora e di nuovo alle stesse domande, per qualche ora.&lt;/p&gt;
+
+&lt;p&gt;Altri poi sono seguiti.&lt;/p&gt;
+
+&lt;p&gt;Non erano più spaesati, ma quasi organizzati. Era tutto lento, vecchio, &lt;em&gt;buggato&lt;/em&gt;, gli admin si dovevano sparare…&lt;/p&gt;
+
+&lt;p&gt;Parlavano di mettere a ferro e fuoco, di sommergere di &lt;em&gt;trash&lt;/em&gt; un luogo anacronistico, di “fatece largo che passamo noi”…&lt;/p&gt;
+
+&lt;p&gt;Hanno iniziato a spammare, bestemmiare, offendere per provare i limiti di tolleranza e rispetto di cui la mia casa andava fiera…&lt;/p&gt;
+
+&lt;p&gt;Un mio caro amico sociologo potrebbe scrivere diversi saggi se avesse vissuto questo pomeriggio di fuoco. I comportamenti sociali delle masse virtuali, sono esacerbati, violenti e irresponsabili tanto quanto, se non più, quelli delle masse fisiche. Il poter agire senza conseguenze fa emergere il peggio della brutalità del subconscio, fa in qualche modo risvegliare una sensazione di ebbrezza radicata nella prevaricazione e nel sopruso dei giusti.&lt;/p&gt;
+
+&lt;p&gt;Ovviamente non tutti quelli che oggi sono arrivati su mastodon.uno sono dei teppisti, ci sono certamente persone che vale la pena scoprire e seguire, e col tempo forse le potrò conoscere e apprezzare. Ma non oggi. Oggi era la difesa della “barriera”.&lt;/p&gt;
+
+&lt;p&gt;L’unica spiegazione che riesco a darmi, è che pochi sconsiderati riescano a smuovere masse di zombie senza arte né parte a fare terra bruciata di qualunque luogo reale o virtuale. Mi chiedo se la spinta a questa impunibile inciviltà la fornisca l’ancestrale paura di scoprirsi sensibili e vulnerabili, deboli e difettosi, soli e mal consigliati, oppure se sia un totale e angosciante terrore di ciò che ci è estraneo e ignoto, e che distruggendolo non è più necessario fare uno sforzo per comprenderlo, non è più necessario minacciare le proprie convinzioni.&lt;/p&gt;
+
+&lt;p&gt;Ma ecco che non appena lo scrivo e ci rifletto capisco che non sono più due spinte diverse, ma sono la stessa, solita, banale e abusata &lt;strong&gt;ignoranza&lt;/strong&gt;. Il non voler conoscere, il non voler sapere, il &lt;em&gt;desiderio di vivere con la benedizione dell’ignoranza&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Quella che fa bruciare i libri, quella delle shitstorm, quella della post-cultura.&lt;/p&gt;
+
+&lt;p&gt;Ma la mia casa è ancora in piedi. E pazientemente inizio a raccogliere i cocci e riordinare, in attesa della prossima ondata.&lt;/p&gt;
+
+&lt;p&gt;#ripTwitter #longLiveMastodon&lt;/p&gt;
+</description>
+        <pubDate>Sat, 19 Nov 2022 00:00:00 +0100</pubDate>
+        <link>https://77nn.it/2022/11/19/Il-grande-disagio-del-18-novembre.html</link>
+        <guid isPermaLink="true">https://77nn.it/2022/11/19/Il-grande-disagio-del-18-novembre.html</guid>
+        
+        <category>social</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Mi etichetto da solo, grazie!</title>
+        <description>&lt;p&gt;È inevitabile, quando si interagisce, incontrare opinioni in cui non ci si riconosce. Si può tagliare corto, la maggior parte delle volte, o approfondire quando non si ha una solida opinione in merito, oppure lasciar perdere perché è la #giornatadellagentilezza.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/3AheMlpjrkERizLnR6CmCcDdXwl7KLs4V5kqcQC4.png&quot; alt=&quot;Pop painting of a woman labelling herself - AI Generated&quot; /&gt;
+&lt;figcaption&gt;Disegno in stile pop di una donna che si etichetta da sola. Immagine generata da IA&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;A volte, invece, prende il sopravvento una sorta di istinto di &lt;em&gt;competizione&lt;/em&gt;. Non entrerò nel merito di questa dinamica, ma accade anche alle persone più posate, lo garantisco. In queste occasionali circostanze non si resiste alla provocazione altrui, o più lascivamente e deliberatamente si ricorre a lasciarci provocare.&lt;/p&gt;
+
+&lt;p&gt;E avviene in questo preciso istante.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“Ah, ma tu sei una zecca comunista!”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“No, ma quindi sei un fascio!”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“… l’amico di Bibbiano!”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“… la nipote di Mubarak!”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;…e così via.&lt;/p&gt;
+
+&lt;p&gt;Per non parlare poi delle questioni legate al &lt;em&gt;genere&lt;/em&gt; o alla &lt;em&gt;giustizia sociale&lt;/em&gt;: là le etichette che l’altra parte di &lt;strong&gt;deve&lt;/strong&gt; attaccare all’orecchio, come al maiale in un macello, sono di infinite campiture.&lt;/p&gt;
+
+&lt;p&gt;Se avevo un dubbio, o il potere di fermare l’interazione, è a questo punto che io non resisto più. Il pulsante di emergenza non risponde alle frenetiche e ripetute pressioni… semplicemente non è più collegato.
+E allora: &lt;strong&gt;&lt;em&gt;“ma sì!”&lt;/em&gt;&lt;/strong&gt;, tiro quella cordicella sporgente dal plesso solare e accendo la motosega dentro di me, provando quasi un’ondata di gioiosa adrenalina, da rivaleggiare con i peggiori &lt;em&gt;villain&lt;/em&gt; di sempre (ironia dell’incoerenza, il post precedente era sulle interazioni &lt;em&gt;positive&lt;/em&gt;!).&lt;/p&gt;
+
+&lt;p&gt;Odio le &lt;em&gt;etichette&lt;/em&gt;, le trovo il peggior tipo di pregiudizio che si possa concepire: tu e la tua identità complessa, sfaccettata, incerta e dubbiosa su molte questioni, vi ritrovate confinati dentro una unico lemma, lercio, sudaticcio, sputacchiato, come se mi avessero reciso tutti gli arti per farmi entrare in una scatola.&lt;/p&gt;
+
+&lt;p&gt;Le opinioni che abbiamo sono coltivate nel corso dei decenni, sono state costruite pietra dopo pietra, alcune ristrutturate, altre smontate e rese più semplici, altre sono esageratamente complesse, forse perché non le abbiamo ancora raffinate a dovere, ma sono tutte comunque difficili da esporre, figuriamoci se possono essere risolte da una semplice etichetta. Quasi come dire che sono identiche a quelle di milioni di altre persone… possibile??? il mio orgoglio di &lt;em&gt;medio pensatore&lt;/em&gt; non accetta questa superficiale semplificazione, così come chiunque altro si trovasse nella stessa situazione.&lt;/p&gt;
+
+&lt;p&gt;Non c’è un buono e un cattivo in questa storia. Non sono io il buono che, poverino, è stato etichettato e l’altra parte cattiva perché lo ha fatto. Sono errori che tendiamo a fare un po’ tutti, un po’ per superficialità, un po’ per sano e meritatissimo dispetto.&lt;/p&gt;
+
+&lt;p&gt;Trovo molto più sensato, a questo punto, cogliere il fiore dell’opportunità nato dalle macerie della crisi… &lt;strong&gt;mi etichetto da solo&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Abbiamo profili dove già dobbiamo usare poche parole, significative, per descriverci: usiamoli per mettere in mostra le nostre &lt;em&gt;etichette&lt;/em&gt; come fossero &lt;strong&gt;medaglie&lt;/strong&gt;, magari sporche di sudore e sangue, rovinate, strappate, bruciacchiate… lasciate l’epica scorrere dentro il vostro profilo…&lt;/p&gt;
+
+&lt;p&gt;…oppure non prendiamoci troppo sul serio e ridiamoci su, con una bella pinta di birra, e &lt;strong&gt;‘fanculo a chi ci vuole male!&lt;/strong&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 13 Nov 2022 00:00:00 +0100</pubDate>
+        <link>https://77nn.it/2022/11/13/Mi-etichetto-da-solo-grazie.html</link>
+        <guid isPermaLink="true">https://77nn.it/2022/11/13/Mi-etichetto-da-solo-grazie.html</guid>
+        
+        <category>social</category>
+        
+      </item>
+      
+    
+     
+      <item>
+        <title>Un meta-post sulla necessità di comunicare</title>
+        <description>&lt;p&gt;Ero abbastanza indeciso se scrivere queste parole o se destinarle all’oblio, ma il fatto che tu le stia leggendo, in qualche modo mi giustifica, &lt;em&gt;a posteriori&lt;/em&gt;.&lt;/p&gt;
+
+&lt;figure&gt;
+&lt;img src=&quot;/assets/images/misc/bBq2LQuQCdZWRpUtbNRG62HJdyGto1VaW9u5TWth.png&quot; alt=&quot;oil painting of cicero talking passionately - AI generated&quot; /&gt;
+&lt;figcaption&gt;Pittura a olio di Cicerone che parla appassionatamente. Immagine generata da IA.&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Se dovessi indicare che cosa mi spinge a condividere qualcosa o a leggere qualcosa scritto da altri, risponderei che cerco uno stimolo, una ispirazione, o più semplicemente cerco un lieve tocco di calore umano in questo  coloratissimo, rumoroso e freddo mondo digitale. &lt;em&gt;Perché mai, dunque, dovrei rinunciare a comunicare?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A 12 o 13 anni mi dicevano che dovevo imparare a non perdere le numerose occasioni che avevo per tacere. E &lt;em&gt;obbedientemente&lt;/em&gt; ho adempiuto, negli anni, aiutato anche da un carattere prevalentemente introverso.&lt;/p&gt;
+
+&lt;p&gt;Non sono qui per parlare della mia giovinezza, non è una storia sufficientemente triste e non coinvolge maltrattamenti e disagio interiore; ho solo introdotto il discorso per dire che il mio eccessivo silenzio mi ha forse giovato fino ai 17 o 18 anni. Da lì in poi è stato sempre una &lt;strong&gt;zavorra&lt;/strong&gt; che rendeva ancora più difficile relazionarmi e inserirmi in contesti di gruppo. Non li ha impediti, certo, ma ha fatto sì che fossi considerato il tipo schivo, taciturno, asociale ed egoista (sì, per certe persone naturalmente estroverse, la mia chiusura sembrava un &lt;em&gt;“non voler condividere”&lt;/em&gt;, e dunque un &lt;em&gt;“tenere per sé”&lt;/em&gt;).&lt;/p&gt;
+
+&lt;p&gt;Credo di star cambiando, grazie alla moglie, alle figlie e al nuovo ambiente di lavoro, e provo sempre più realizzazione nell’interazione con amici e colleghi, pur mantenendo un certo gradi di “distanziamento sociale”. Non sono certamente pronto a frequentare persone fuori contesto, ma grazie alla rete posso restare nella mia &lt;em&gt;comfort zone&lt;/em&gt; e trarre interessanti stimoli da questa sorta di &lt;em&gt;interazioni asincrone a distanza&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Per certe circostanze ho avuto recentemente esperienza di un &lt;strong&gt;forte disagio&lt;/strong&gt; da parte di una giovanissima. Non racconterò ulteriori dettagli sulla vicenda, ma è stata una esperienza che mi ha dato un bel &lt;em&gt;ceffone&lt;/em&gt;. E ho capito che, &lt;strong&gt;nel rispetto della propria personalità&lt;/strong&gt;, non bisogna tenere dentro l’ombra. Non bisogna covare rancore, fomentare insoddisfazione, nutrire rabbia e disperazione… occorre aprirsi e far &lt;em&gt;evaporare&lt;/em&gt; tutti questi veleni con relazioni e interazioni sane, stimolanti, positive: lasciamo perdere il fascino magnetico di &lt;strong&gt;Darth Vader&lt;/strong&gt;, è solo un vecchio scorreggione con un outfit anni ‘80 strafighissimo…&lt;/p&gt;
+
+&lt;p&gt;Ritrovando un pizzico di serietà… è per questo che non sopporto, dal vivo e online, l’&lt;em&gt;hate speech&lt;/em&gt;, il &lt;em&gt;body shaming&lt;/em&gt;, le bestemmie&lt;sup&gt;(1)&lt;/sup&gt; e la derisione degli altri, anche se magari dentro di me credo che lo meritino.&lt;/p&gt;
+
+&lt;p&gt;Non è corretto far credere, a chi non ha altro modo di sfogare le proprie frustrazioni, che quello sia il metodo giusto. In questo modo la spirale di nefandezza non può che trascinare sul fondo della palude e peggiorare ad ogni iterazione. Non è accettabile e non può essere consentito.&lt;/p&gt;
+
+&lt;p&gt;Rileggendo quanto scritto fin qua, ho sentito il dovere di precisare che ho preso coscienza tardi della mia introversione. Ho pensato, da giovane, che fosse un difetto comportamentale e ne ho moderatamente sofferto… ma crescendo ho capito che era la mia &lt;em&gt;vera&lt;/em&gt; identità e l’ho abbracciata sospirando di sollievo (senza troppa confidenza però, eh!).&lt;/p&gt;
+
+&lt;p&gt;Dunque alla fine del discorso, se veramente e follemente sei arrivat* fino a qui, cosa credi di aver guadagnato? Pensi di avere sufficiente motivazione per affrontare e dissipare qualche grande o piccola ombra che non ti lascia in pace? Se fosse così, fai del tuo meglio per aiutare un’altra persona come te a superare l’ostacolo delle parole!&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;(1) Anche per questo ho ritenuto di dover spiegare la mia posizione. Molti ritengono il bestemmiare una parte della libertà di parola che non lede direttamente nessun vivente e dunque che &lt;strong&gt;deve essere&lt;/strong&gt; socialmente accettata. Come per l’identità di genere, le persone possiedono anche altri tipi di identità; una di queste è quella spirituale e religiosa, che fa sì per alcuni di considerare le divinità parti importanti della propria sfera affettiva al pari della famiglia. Io non sono credente, ma non sopporterei che qualcuno chiamasse mia madre o mio padre con alcuni terribili epiteti che non posso ripetere.&lt;/p&gt;
+
+</description>
+        <pubDate>Sat, 12 Nov 2022 00:00:00 +0100</pubDate>
+        <link>https://77nn.it/2022/11/12/Non-Tacere.html</link>
+        <guid isPermaLink="true">https://77nn.it/2022/11/12/Non-Tacere.html</guid>
+        
+        <category>social</category>
+        
+      </item>
+      
+    
   </channel>
 </rss>

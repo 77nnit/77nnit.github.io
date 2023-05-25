@@ -1,0 +1,25 @@
+---
+layout: null
+nositemap: 1
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    {% for post in site.posts %}{% unless post.nositemap == 1 %}<url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        {% if post.lastmod == null %}<lastmod>{{ post.date | date_to_xmlschema }}</lastmod>{% else %}<lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>{% endif %}
+        {% if post.imgsrc %}<image:image>
+            <image:loc>{{ site.url }}{{ post.imgsrc }}</image:loc>
+        </image:image> {% endif %}
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    {% endunless %}{% endfor %}
+    {% for page in site.pages %}{% unless page.nositemap == 1 %}{% capture lastModificationDate %}{% last_modified {{ page.path }} %}{% endcapture %}<url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+        <lastmod>{{ lastModificationDate | date_to_xmlschema }}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1</priority>
+    </url>
+    {% endunless %}{% endfor %}
+</urlset>

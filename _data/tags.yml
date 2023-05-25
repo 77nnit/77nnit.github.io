@@ -1,0 +1,8 @@
+- name: social
+  class: tag orange
+- name: tech
+  class: tag blue
+- name: worklife
+  class: tag green
+- name: ethics
+  class: tag purple

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Etichette - classificazione dei post di 77nn.it
+language: it
+description: I post del blog di 77nn.it organizzati per etichette
+---
+<h1>Etichette del blog</h1>
+<div class="tagcontent">
+{% for tag in site.data.tags %}
+  <div class="tagContainer">
+    <div class ="{{tag.class}}">{{tag.name}}</div>
+    <div class="postList">
+      {% for post in site.posts %}
+        {% if tag.name == post.tag%}
+          <p class="postlink"><a rel="{{ post.keywords }}" href= "{{post.url}}">{{post.title}}</a></p> 
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+</div>

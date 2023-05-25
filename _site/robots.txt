@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /404.html
+
+User-agent: *
+Disallow: /messaggio-inviato.html
+
+Sitemap: https://77nn.it/sitemap.xml

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="{{ page.language }}" prefix="og: https://ogp.me/ns#">
+  <head>
+    <title>{{ page.title }}</title>  
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/styles.css">
+    <link rel="preload" as="font" href="{{ site.url }}/assets/css/fonts/5by7.ttf" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="{{ site.url }}/assets/css/fonts/Now-ExtraLight.otf" type="font/otf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="{{ site.url }}/assets/css/fonts/Now-Medium.otf" type="font/otf" crossorigin="anonymous">
+  
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="description" content="{{ page.description }}">
+    <meta name="keywords" content="{{ page.keywords }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- MICROFORMATS METADATA -->
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:description" content="{{ page.description }}" />
+    <meta property="og:image" content="{% if page.imgsrc %}{{ site.url}}{{ page.imgsrc }}{% else %}{{ site.url }}/assets/images/icon.png{% endif %}" />
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}" />
+    <meta property="og:url" content="{{ site.url}}{{ page.url }}" /> 
+    <meta property="og:site_name" content="{{site.name}}" />
+    <meta property="article:author" content ="{{ site.url}}/autore.html">
+    {% if page.keywords %}<meta property="article:tag" content = "{{ page.keywords }}">{% endif %}
+    {% if page.tag %}<meta property="article:section" content = "{{ page.tag }}">{% endif %}
+    <meta property="profile:first_name" content="Michele" />
+    <meta property="profile:last_name" content="Brami" />
+    <meta property="profile:username" content="TiTiNoNero" /> 
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- LINK TAGS -->
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
+    <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+    <link rel="icon" href="/assets/images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/images/icon.png">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  </head>
+
+  <body>{% capture lastModificationDate %}{% last_modified {{ page.path }} %}{% endcapture %}
+    <time class="dt-modified" datetime="{{ lastModificationDate | date_to_xmlschema }}" itemprop="dateModified"></time>
+    <div class="overflow">{% include header.html %} {% include navigation.html %}
+      <div class="pagecontainer">
+        <div class="content">{{ content }}</div>
+      </div>{% include footer.html %}
+    </div>
+     {% if page.layout == "post" %}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "BlogPosting",
+        "@id": "{{ site.url}}{{ page.url }}",
+        "mainEntityOfPage": "{{ site.url}}{{ page.url }}",
+        "headline": "{{ page.title }}",
+        "description": "{{ page.description }}",
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "dateModified": "{{ lastModificationDate | date_to_xmlschema }}",
+        "author": {
+            "@type": "Person",
+            "@id": "https://77nn.it/autore.html",
+            "name": "Michele Brami",
+            "url": "https://77nn.it/autore.html"
+        },
+        "image": {
+            "@type": "ImageObject",
+            "@id": "{{ post.imgsrc }}",
+            "url": "{{ post.imgsrc }}",
+            "height": "362",
+            "width": "388"
+        },
+        "url": "{{ site.url}}{{ page.url }}",
+        "isPartOf": {
+            "@type" : "Blog",
+             "@id": "https://77nn.it/blog.html",
+             "name": "TiTiNoNero dice cose"
+        }
+    }
+    </script>
+   {% endif %}
+  </body>
+</html>

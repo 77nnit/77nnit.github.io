@@ -1,0 +1,24 @@
+---
+layout: default
+---
+  <main>
+  <article class="h-entry e-content">
+    <h1 class="p-name">{{ page.title }}</h1>
+    <div class="post-meta">
+      <div class="meta">
+        <time class="post-date dt-published">{{ page.date | date: "%F" }}</time>
+      </div>
+      <div class="meta">{% for tag in site.data.tags %} {% if page.tag == tag.name %}
+        <span class ="{{tag.class}} p-category"> {{tag.name}} </span>{% endif %}{% endfor %}
+      </div>
+      <div class="meta">
+        <span>~{% capture words %}{{ page.content | number_of_words | minus: 250 }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 180 | append: " min." }}{% endunless %}</span>
+      </div>
+      <div class ="meta">
+        <span><a rel="bookmark" href="{{ site.url }}{{ post.url }}" title="{{ post.title }}" style="font-size: 0.9em;">PERMALINK</a></span>
+      </div>
+     </div>
+    {{ content }}
+  </article>
+</main>
+

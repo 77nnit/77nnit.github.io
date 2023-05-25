@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog - elenco dei post di 77nn.it
+language: it
+description: Questa pagina raccoglie la lista degli ultimi post del blog di 77nn.it
+---
+
+<h1>Tutti i post</h1>
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <details close>
+        <summary><time class="post-date">{{ post.date | date: "%F" }}</time> - <a href="{{ post.url }}">{{ post.title }}</a></summary>
+        <br>
+        {{ post.excerpt }}<a class="continue" href="{{ post.url }}"">Leggi tutto</a>
+        <br>
+      </details>
+      <br>
+    </li>
+  {% endfor %}
+</ul>
+

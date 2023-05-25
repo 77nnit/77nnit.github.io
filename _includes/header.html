@@ -1,0 +1,16 @@
+<header>
+<div class="header">
+    <div class= "siteTitle">
+        {{site.name}}
+    </div>
+    <div class= "siteDescription">
+        <p>{{site.description}}<span class="blink">_</span></p>
+    </div>
+<div class= "siteTitle">
+
+    </div>
+</div>
+<div {% if site.announcement %} class= "announcements" {% else %} class= "hidden" {% endif %}>
+       <p>{{ site.announcement }}</p>
+    </div>
+</header>

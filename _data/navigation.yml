@@ -1,0 +1,27 @@
+- name: Home
+  link: /
+  icon: /assets/images/home.svg
+  alt: Pixelated-style icon representing a home with pointy roof
+- name: Blog
+  link: /blog.html
+  icon: /assets/images/blog.svg
+  alt: Pixelated-style icon representing a screen with some text on it
+  sub: 
+   - name: Etichette
+     link: /etichette.html
+   - name: RSS
+     link: /feed.xml
+     download: true
+- name: Info
+  link: /manifesto.html
+  icon: /assets/images/about.svg
+  alt: Pixelated-style icon representing a circled letter 'i' as in 'info'
+  sub:
+    - name: Manifesto
+      link: /manifesto.html
+    - name: Autore
+      link: /autore.html
+    - name: Contatti
+      link: /contatti.html
+    - name: Legale
+      link: /legale.html

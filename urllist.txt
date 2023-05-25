@@ -1,0 +1,8 @@
+---
+layout: null
+nositemap: 1
+---
+{% for post in site.posts %}{% if post.nositemap == 1 %}{% continue %}{% endif %}{{ site.url }}{{ post.url }}
+{% endfor %}{% for page in site.pages %}{% if page.nositemap == 1 %}{% continue %}{% endif %}{{ site.url }}{{ page.url }}
+{% endfor %}
+

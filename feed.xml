@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <description>TiTiNoNero dice cose</description>
-    <link>https://77nnit.github.io/</link>
-    <atom:link href="https://77nnit.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 25 May 2023 23:07:02 +0200</pubDate>
-    <lastBuildDate>Thu, 25 May 2023 23:07:02 +0200</lastBuildDate>
+    <link>https://77nn.it/</link>
+    <atom:link href="https://77nn.it/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 21 May 2023 16:32:32 +0200</pubDate>
+    <lastBuildDate>Sun, 21 May 2023 16:32:32 +0200</lastBuildDate>
     
      
       <item>
@@ -111,8 +111,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 19 May 2023 00:00:00 +0200</pubDate>
-        <link>https://77nnit.github.io/2023/05/19/IA-Opportunita-rischio.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/05/19/IA-Opportunita-rischio.html</guid>
+        <link>https://77nn.it/2023/05/19/IA-Opportunita-rischio.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/19/IA-Opportunita-rischio.html</guid>
         
         <category>ethics</category>
         
@@ -129,7 +129,7 @@
 &lt;figcaption&gt;Il serivzio online *Plain Text Tables* consente di creare tabelle in ASCII/UNICODE rapidamente e con una ottima resa visuale.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Dopo &lt;a href=&quot;https://77nnit.github.io/2023/04/24/Plain-text-rocks.html&quot;&gt;il mio post di qualche settimana fa&lt;/a&gt; che rivalutava e promuoveva l’utilizzo del &lt;strong&gt;testo semplice&lt;/strong&gt; come formato di lavoro da preferire, mi ero ripromesso di approfondirne alcuni aspetti. Ed ecco dunque che, girovagando per la rete, ho trovato diverse &lt;em&gt;utility&lt;/em&gt; che permettono di realizzare tabelle &lt;em&gt;perfette&lt;/em&gt; da inserire in un documento di solo testo, ma non solo.&lt;/p&gt;
+&lt;p&gt;Dopo &lt;a href=&quot;https://77nn.it/2023/04/24/Plain-text-rocks.html&quot;&gt;il mio post di qualche settimana fa&lt;/a&gt; che rivalutava e promuoveva l’utilizzo del &lt;strong&gt;testo semplice&lt;/strong&gt; come formato di lavoro da preferire, mi ero ripromesso di approfondirne alcuni aspetti. Ed ecco dunque che, girovagando per la rete, ho trovato diverse &lt;em&gt;utility&lt;/em&gt; che permettono di realizzare tabelle &lt;em&gt;perfette&lt;/em&gt; da inserire in un documento di solo testo, ma non solo.&lt;/p&gt;
 
 &lt;p&gt;Ovviamente ci sono moltissime applicazioni per manipolare file di testo in modo molto raffinato, ma ho preferito concentrarmi su dei tool online che sembrano non &lt;em&gt;trattenere&lt;/em&gt; una copia dei dati che inseriamo: salvaguardiamo sempre la nostra privacy, soprattutto e in special modo quando utilizziamo strumenti di conversione &lt;em&gt;gratuiti&lt;/em&gt; online!&lt;/p&gt;
 
@@ -193,8 +193,8 @@
 
 </description>
         <pubDate>Tue, 16 May 2023 00:00:00 +0200</pubDate>
-        <link>https://77nnit.github.io/2023/05/16/Tabelle-Dati-Testo-semplice.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/05/16/Tabelle-Dati-Testo-semplice.html</guid>
+        <link>https://77nn.it/2023/05/16/Tabelle-Dati-Testo-semplice.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/16/Tabelle-Dati-Testo-semplice.html</guid>
         
         <category>tech</category>
         
@@ -234,7 +234,7 @@
 &lt;figcaption&gt;la funzione AI Summarizer di Brave Search all&apos;opera.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Nell’immagine sopra si può vedere un esempio della &lt;em&gt;feature&lt;/em&gt; in funzione. Alla domanda “What is life-cycle management?” l’IA integrata estrae le informazioni da due fonti distinte e le mostra come unico paragrafo che risponde sinteticamente alla domanda posta. In più riporta, sotto, le &lt;em&gt;fonti&lt;/em&gt; e per ciascun estratto, al passaggio con il mouse, ne evidenzia quella relativa. Ecco, sono quasi commosso: vorrei che &lt;strong&gt;ChatGPT&lt;/strong&gt; (ne ho parlato in &lt;a href=&quot;https://77nnit.github.io/2023/01/02/Abbracciamo-le-AI-Generative.html&quot; target=&quot;_blank&quot;&gt;questo post&lt;/a&gt; qualche tempo fa) lavorasse esattamente in questo modo, senza reinterpretare le fonti e anzi riportandole in totale trasparenza.&lt;/p&gt;
+&lt;p&gt;Nell’immagine sopra si può vedere un esempio della &lt;em&gt;feature&lt;/em&gt; in funzione. Alla domanda “What is life-cycle management?” l’IA integrata estrae le informazioni da due fonti distinte e le mostra come unico paragrafo che risponde sinteticamente alla domanda posta. In più riporta, sotto, le &lt;em&gt;fonti&lt;/em&gt; e per ciascun estratto, al passaggio con il mouse, ne evidenzia quella relativa. Ecco, sono quasi commosso: vorrei che &lt;strong&gt;ChatGPT&lt;/strong&gt; (ne ho parlato in &lt;a href=&quot;https://77nn.it/2023/01/02/Abbracciamo-le-AI-Generative.html&quot; target=&quot;_blank&quot;&gt;questo post&lt;/a&gt; qualche tempo fa) lavorasse esattamente in questo modo, senza reinterpretare le fonti e anzi riportandole in totale trasparenza.&lt;/p&gt;
 
 &lt;p&gt;Tutto sommato i risultati che si ottengono, sia da ricerca normale che da AI Summarizer, sono robusti e rilevanti. Non è ancora chiarissimo se ci siano, e quali siano, i risultati “sponsorizzati”, e questo è un punto un po’ meno a favore della trasparenza, né quali siano esattamente i segnali web che Brave Search utilizzi per classificare e mostrare i risultati, ma ci si aspetta che presto Brave fornirà una &lt;em&gt;webmaster&lt;/em&gt; console nello stile di Bing o Google, dove gli esperti di &lt;em&gt;SEO&lt;/em&gt; potranno sbizzarrsirsi.&lt;/p&gt;
 
@@ -253,8 +253,8 @@
 &lt;/div&gt;
 </description>
         <pubDate>Sun, 07 May 2023 00:00:00 +0200</pubDate>
-        <link>https://77nnit.github.io/2023/05/07/Brave-Search-come-perche-usarlo.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/05/07/Brave-Search-come-perche-usarlo.html</guid>
+        <link>https://77nn.it/2023/05/07/Brave-Search-come-perche-usarlo.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/07/Brave-Search-come-perche-usarlo.html</guid>
         
         <category>tech</category>
         
@@ -336,8 +336,8 @@ Una moltidudine di servizi, possibili grazie agli sviluppatori di software &lt;e
 &lt;/div&gt;
 </description>
         <pubDate>Fri, 05 May 2023 00:00:00 +0200</pubDate>
-        <link>https://77nnit.github.io/2023/05/05/mastodon-fediverso-web-alternativo.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/05/05/mastodon-fediverso-web-alternativo.html</guid>
+        <link>https://77nn.it/2023/05/05/mastodon-fediverso-web-alternativo.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/05/mastodon-fediverso-web-alternativo.html</guid>
         
         <category>social</category>
         
@@ -466,8 +466,8 @@ TEMP=hex(2):22,00,43,00,3a,00,5c,00,[e una lunga sequenza di valori esadecimali]
 &lt;p&gt;&lt;a href=&quot;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash&quot;&gt;https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 May 2023 00:00:00 +0200</pubDate>
-        <link>https://77nnit.github.io/2023/05/01/Verifica-hash-file-scaricati.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/05/01/Verifica-hash-file-scaricati.html</guid>
+        <link>https://77nn.it/2023/05/01/Verifica-hash-file-scaricati.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/05/01/Verifica-hash-file-scaricati.html</guid>
         
         <category>tech</category>
         
@@ -492,8 +492,8 @@ TEMP=hex(2):22,00,43,00,3a,00,5c,00,[e una lunga sequenza di valori esadecimali]
 
 </description>
         <pubDate>Tue, 25 Apr 2023 00:00:00 +0200</pubDate>
-        <link>https://77nnit.github.io/2023/04/25/(R)Esistiamo.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/04/25/(R)Esistiamo.html</guid>
+        <link>https://77nn.it/2023/04/25/(R)Esistiamo.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/04/25/(R)Esistiamo.html</guid>
         
         <category>ethics</category>
         
@@ -549,8 +549,8 @@ TEMP=hex(2):22,00,43,00,3a,00,5c,00,[e una lunga sequenza di valori esadecimali]
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 24 Apr 2023 00:00:00 +0200</pubDate>
-        <link>https://77nnit.github.io/2023/04/24/Plain-text-rocks.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/04/24/Plain-text-rocks.html</guid>
+        <link>https://77nn.it/2023/04/24/Plain-text-rocks.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/04/24/Plain-text-rocks.html</guid>
         
         <category>tech</category>
         
@@ -600,8 +600,8 @@ Con il nostro nome e cognome, ad esempio, siamo riconosciuti sui social network,
 
 </description>
         <pubDate>Sun, 19 Feb 2023 00:00:00 +0100</pubDate>
-        <link>https://77nnit.github.io/2023/02/19/Password-che-casino.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/02/19/Password-che-casino.html</guid>
+        <link>https://77nn.it/2023/02/19/Password-che-casino.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/02/19/Password-che-casino.html</guid>
         
         <category>ethics</category>
         
@@ -634,8 +634,8 @@ Con il nostro nome e cognome, ad esempio, siamo riconosciuti sui social network,
 
 </description>
         <pubDate>Fri, 27 Jan 2023 00:00:00 +0100</pubDate>
-        <link>https://77nnit.github.io/2023/01/27/Scripting-Sicuro-Powershell.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/01/27/Scripting-Sicuro-Powershell.html</guid>
+        <link>https://77nn.it/2023/01/27/Scripting-Sicuro-Powershell.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/01/27/Scripting-Sicuro-Powershell.html</guid>
         
         <category>tech</category>
         
@@ -675,8 +675,8 @@ I compiti che si dividono queste due figure sono profondamente diversi. Il Secon
 &lt;p&gt;Un Comandante non si cala le braghe davanti agli altri Comandanti, né tantomeno davanti ai propri ufficiali in seconda. Un Comandante sta in plancia, quando il mare è grosso, e affronta le onde. Un Comandante abbandona la nave per ultimo.&lt;/p&gt;
 </description>
         <pubDate>Sun, 15 Jan 2023 00:00:00 +0100</pubDate>
-        <link>https://77nnit.github.io/2023/01/15/Comando-autorita-e-responsabilita.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/01/15/Comando-autorita-e-responsabilita.html</guid>
+        <link>https://77nn.it/2023/01/15/Comando-autorita-e-responsabilita.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/01/15/Comando-autorita-e-responsabilita.html</guid>
         
         <category>worklife</category>
         
@@ -717,8 +717,8 @@ I compiti che si dividono queste due figure sono profondamente diversi. Il Secon
 &lt;p&gt;C’è che noi da piccoli, e i nostri ragazzi oggi, non abbiamo trascurato mai il &lt;em&gt;gioco&lt;/em&gt;. Le risate e i giochi, fondazione della creatività, ci salveranno!&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Jan 2023 00:00:00 +0100</pubDate>
-        <link>https://77nnit.github.io/2023/01/02/Abbracciamo-le-AI-Generative.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2023/01/02/Abbracciamo-le-AI-Generative.html</guid>
+        <link>https://77nn.it/2023/01/02/Abbracciamo-le-AI-Generative.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/01/02/Abbracciamo-le-AI-Generative.html</guid>
         
         <category>tech</category>
         
@@ -752,8 +752,8 @@ I compiti che si dividono queste due figure sono profondamente diversi. Il Secon
 &lt;p&gt;…caro asteriode, dammi retta, scansala!&lt;/p&gt;
 </description>
         <pubDate>Thu, 24 Nov 2022 00:00:00 +0100</pubDate>
-        <link>https://77nnit.github.io/2022/11/24/Asteroidi-e-colonne.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2022/11/24/Asteroidi-e-colonne.html</guid>
+        <link>https://77nn.it/2022/11/24/Asteroidi-e-colonne.html</link>
+        <guid isPermaLink="true">https://77nn.it/2022/11/24/Asteroidi-e-colonne.html</guid>
         
         <category>worklife</category>
         
@@ -799,8 +799,8 @@ I compiti che si dividono queste due figure sono profondamente diversi. Il Secon
 &lt;p&gt;#ripTwitter #longLiveMastodon&lt;/p&gt;
 </description>
         <pubDate>Sat, 19 Nov 2022 00:00:00 +0100</pubDate>
-        <link>https://77nnit.github.io/2022/11/19/Il-grande-disagio-del-18-novembre.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2022/11/19/Il-grande-disagio-del-18-novembre.html</guid>
+        <link>https://77nn.it/2022/11/19/Il-grande-disagio-del-18-novembre.html</link>
+        <guid isPermaLink="true">https://77nn.it/2022/11/19/Il-grande-disagio-del-18-novembre.html</guid>
         
         <category>social</category>
         
@@ -849,8 +849,8 @@ E allora: &lt;strong&gt;&lt;em&gt;“ma sì!”&lt;/em&gt;&lt;/strong&gt;, tiro 
 &lt;p&gt;…oppure non prendiamoci troppo sul serio e ridiamoci su, con una bella pinta di birra, e &lt;strong&gt;‘fanculo a chi ci vuole male!&lt;/strong&gt;&lt;/p&gt;
 </description>
         <pubDate>Sun, 13 Nov 2022 00:00:00 +0100</pubDate>
-        <link>https://77nnit.github.io/2022/11/13/Mi-etichetto-da-solo-grazie.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2022/11/13/Mi-etichetto-da-solo-grazie.html</guid>
+        <link>https://77nn.it/2022/11/13/Mi-etichetto-da-solo-grazie.html</link>
+        <guid isPermaLink="true">https://77nn.it/2022/11/13/Mi-etichetto-da-solo-grazie.html</guid>
         
         <category>social</category>
         
@@ -891,8 +891,8 @@ E allora: &lt;strong&gt;&lt;em&gt;“ma sì!”&lt;/em&gt;&lt;/strong&gt;, tiro 
 
 </description>
         <pubDate>Sat, 12 Nov 2022 00:00:00 +0100</pubDate>
-        <link>https://77nnit.github.io/2022/11/12/Non-Tacere.html</link>
-        <guid isPermaLink="true">https://77nnit.github.io/2022/11/12/Non-Tacere.html</guid>
+        <link>https://77nn.it/2022/11/12/Non-Tacere.html</link>
+        <guid isPermaLink="true">https://77nn.it/2022/11/12/Non-Tacere.html</guid>
         
         <category>social</category>
         

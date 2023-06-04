@@ -100,12 +100,11 @@ function setup() {
       P.push(new pset(thisD));
     }  
   }
-  saveFrames("77nn_it_", "png", 8, 22);
 }
 
 function draw() {
-  //clear();
-  background ("#222222");
+  clear();
+
   for (var i = 0; i < P.length; i++){
     P[i].render();
     P[i].update();

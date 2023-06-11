@@ -5,8 +5,192 @@
     <description>TiTiNoNero dice cose</description>
     <link>https://77nn.it/</link>
     <atom:link href="https://77nn.it/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 04 Jun 2023 17:43:07 +0200</pubDate>
-    <lastBuildDate>Sun, 04 Jun 2023 17:43:07 +0200</lastBuildDate>
+    <pubDate>Sun, 11 Jun 2023 22:43:17 +0200</pubDate>
+    <lastBuildDate>Sun, 11 Jun 2023 22:43:17 +0200</lastBuildDate>
+    
+     
+      <item>
+        <title>Diagrammi di ogni tipo grazie a Mermaid</title>
+        <description>&lt;p&gt;Da tempo ho iniziato una personale crociata “non cruenta” per rivalutare, sostenere e promuovere l’utilizzo del &lt;strong&gt;plaintext&lt;/strong&gt; come strumento di lavoro versatile e completo; ne ho parlato la prima volta nel post &lt;a href=&quot;/2023/04/24/Plain-text-rocks.html&quot;&gt;Plain Text Rocks&lt;/a&gt; e ho poi esplorato la creazione di tabelle in &lt;a href=&quot;/2023/05/16/Tabelle-Dati-Testo-semplice.html&quot;&gt;Tabelle e dati in testo semplice&lt;/a&gt;… con questo post ho deciso di inaugurare ufficialmente una sezione dedicata del blog con la tag &lt;strong&gt;plain&lt;/strong&gt;!&lt;/p&gt;
+
+&lt;p&gt;In questo post volevo presentarti un argomento che ha sempre a che fare con il microcosmo del &lt;strong&gt;testo semplice&lt;/strong&gt;, ovvero come riuscire a generare &lt;strong&gt;diagrammi grafici&lt;/strong&gt; di ogni genere a partire da un set di definizioni formali puramente testuali.&lt;/p&gt;
+
+&lt;p&gt;Lo strumento che utilizzerò, e che ho anche integrato su questo sito, si chiama &lt;strong&gt;Mermaid&lt;/strong&gt;, ed è pubblicato con licenza &lt;em&gt;MIT&lt;/em&gt; su Github a questo indirizzo &lt;a href=&quot;https://github.com/mermaid-js/mermaid&quot;&gt;https://github.com/mermaid-js/mermaid&lt;/a&gt;. È un tool maturo ed eccezionale per disegnare e pubblicare diagrammi vettoriali senza utilizzare un editor come Visio, semplicemente descrivendo le entità e le relazioni che le legano con una sintassi tutt’altro che complicata.&lt;/p&gt;
+
+&lt;p&gt;Mermaid può essere utilizzato &lt;em&gt;online&lt;/em&gt; con un &lt;a href=&quot;https://mermaid.live/&quot;&gt;&lt;strong&gt;Live-Editor&lt;/strong&gt;&lt;/a&gt;, oppure lo possiamo trovare già integrato su numerose piattaforme, GitHub, GitLab, Wordpress, Google Docs, o come plugin per svariate applicazioni come ad esempio VSCode, Sublime Text e VIM. Io ho installato un plugin per consentire al mio sito, basato su &lt;em&gt;Jekyll&lt;/em&gt;, di interpretare la sintassi di Mermaid inserita all’interno di un file &lt;strong&gt;markdown&lt;/strong&gt; e generare i relativi diagrammi.&lt;/p&gt;
+
+&lt;p&gt;Ovviamente è possibile fare un uso ben più avanzato di questa libreria; è possibile definire funzioni di callback su eventi generati sugli elementi &lt;strong&gt;SVG&lt;/strong&gt; che costituiscono i diagrammi generati e associare stili &lt;em&gt;CSS&lt;/em&gt; specifici. Non pare che ci sia la possibilità, allo stato attuale, di animare i grafici in alcun modo, se non con tanta pazienza e olio di gomito.&lt;/p&gt;
+
+&lt;h2 id=&quot;pie-chart&quot;&gt;Pie Chart&lt;/h2&gt;
+&lt;p&gt;il &lt;strong&gt;Pie Chart&lt;/strong&gt;, o &lt;strong&gt;diagramma a torta&lt;/strong&gt;, è un diagramma adatto a mostrare il rapporto tra le parti e l’intero. È forse il diagramma più semplice che Mermaid è in grado di gestire. In questo caso la sintassi è molto semplice: basta inserire il titolo ed elencare le coppie &lt;em&gt;chiave-valore&lt;/em&gt; separate da “:”. I colori sono personalizzabili utilizzando semplice CSS.&lt;/p&gt;
+
+&lt;p&gt;Questo è il codice necessario per la generazione:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  pie title Grafico a torta dei miei text editor preferiti
+    &quot;Notepad++&quot;: 48
+    &quot;Xed&quot;: 42
+    &quot;QOwnNotes&quot;: 33
+    &quot;VSCode&quot;: 24
+    &quot;Quillpad&quot;: 14
+    &quot;Other&quot;: 5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;script src=&quot;https://77nn.it/assets/js/lib/mermaid.min.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+  pie title Grafico a torta dei miei text editor preferiti
+    &quot;NPP&quot;: 48
+    &quot;Xed&quot;: 42
+    &quot;QON&quot;: 33
+    &quot;VSCode&quot;: 24
+    &quot;QPad&quot;: 14
+    &quot;Other&quot;: 5
+&lt;/div&gt;
+
+&lt;h2 id=&quot;flow-chart&quot;&gt;Flow Chart&lt;/h2&gt;
+
+&lt;p&gt;il secondo esempio è un &lt;strong&gt;flow-chart&lt;/strong&gt;, cioè un diagramma che serve a descrivere il flusso di un processo o una procedura. Questo diagramma è costituito da nodi e connessioni. In base alla forma dei nodi o delle connessioni si possono descrivere flussi condizionali, processi, input e output, come indicato dallo standard più recente pubblicato nel 1985 da ISO &lt;a href=&quot;https://www.iso.org/standard/11955.html&quot;&gt;ISO 5807:1985&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Nel nostro esempio abbiamo utilizzato la &lt;a href=&quot;https://mermaid.js.org/intro/n00b-syntaxReference.html&quot;&gt;sintassi di Mermaid&lt;/a&gt; seguente, che definisce i singoli nodi (con una ID, un testo e le parentesi che indicano la forma), e subito dopo realizza le connessioni (anch’esse definite con una etichetta, uno stile di freccia e uno di linea).&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+title: Esempio di FlowChart con Mermaid
+---
+flowchart TB
+  S1(((START)))
+  P11(Process1-1)
+  D11{Decision1-1}
+  P12(Process1-2)
+  P13(Process1-3)
+  P14(Process1-4)
+  E1(((END)))
+  S1--&amp;gt;P11--&amp;gt;D11--Condition 1--&amp;gt;P12--&amp;gt;E1
+  D11--Condition 3--&amp;gt;P14-.-&amp;gt;P12
+  D11--Condition 2--&amp;gt;P13--Loop--&amp;gt;P11
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;script src=&quot;https://77nn.it/assets/js/lib/mermaid.min.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+---
+title: Esempio di FlowChart con Mermaid
+---
+flowchart LR
+  S1(((START)))
+  P11(Process1-1)
+  D11{Decision1-1}
+  P12(Process1-2)
+  P13(Process1-3)
+  P14(Process1-4)
+  E1(((END)))
+  S1--&amp;gt;P11--&amp;gt;D11--Condition 1--&amp;gt;P12--&amp;gt;E1
+  D11--Condition 3--&amp;gt;P14-.-&amp;gt;P12
+  D11--Condition 2--&amp;gt;P13--Loop--&amp;gt;P11
+&lt;/div&gt;
+
+&lt;h2 id=&quot;diagramma-gantt&quot;&gt;Diagramma Gantt&lt;/h2&gt;
+
+&lt;p&gt;Il secondo esempio è un &lt;strong&gt;diagramma Gantt&lt;/strong&gt;, tipicamente utlizzato nel &lt;em&gt;project management&lt;/em&gt; per tenere traccia delle &lt;em&gt;task&lt;/em&gt; assegnate e del loro progresso nel tempo. Questo diagramma è costituito da una  o più sezioni di &lt;em&gt;attività&lt;/em&gt;, ciascuna descritta con un identificativo, uno &lt;em&gt;stato&lt;/em&gt;, una data di inizio o un vincolo rispetto a una o più altre attività e da una durata o data di fine.
+In questo caso il codice che viene interpretato è leggermente più complicato, ma si tratta in buona sostanza di una lista.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+title: Esempio di Diagramma di Gantt con Mermaid
+---
+gantt
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y-%m-%d
+    tickInterval 1day
+    title       Prova di diagramma Gantt
+    excludes    weekends
+    
+    section A section
+    Completed task           :active, des1, 2023-06-10,2023-06-11
+    Future task2             :des4, after des1, 12h
+
+    section Critical tasks
+    Completed task           :crit, done, 2023-06-11,12h
+    Implement feature 1      :crit, active, after des1, 6h
+    Create tests             :crit, active, 18h
+    Future task              :crit, 8h
+    Functionality added      :milestone, 2023-06-13, 0d
+
+    section Documentation
+    Describe Feature         :active, a1, after des4, 12h
+    Add another diagram      :doc1, after a1 , 6h
+
+    section Last section
+    Describe gantt syntax    :after doc1, 4h
+    Push to PRD              :3h
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;script src=&quot;https://77nn.it/assets/js/lib/mermaid.min.js&quot;&gt;&lt;/script&gt;
+&lt;div class=&quot;mermaid&quot;&gt;
+---
+title: Esempio di Diagramma di Gantt con Mermaid
+---
+gantt
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y-%m-%d
+    tickInterval 1day
+    title       Prova di diagramma Gantt
+    excludes    weekends
+    
+    section A section
+    Completed task           :active, des1, 2023-06-10,2023-06-11
+    Future task2             :des4, after des1, 12h
+
+    section Critical tasks
+    Completed task           :crit, done, 2023-06-11,12h
+    Implement feature 1      :crit, active, after des1, 6h
+    Create tests             :crit, active, 18h
+    Future task              :crit, 8h
+    Functionality added      :milestone, 2023-06-13, 0d
+
+    section Documentation
+    Describe Feature         :active, a1, after des4, 12h
+    Add another diagram      :doc1, after a1 , 6h
+
+    section Last section
+    Describe gantt syntax    :after doc1, 4h
+    Push to PRD              :3h
+&lt;/div&gt;
+
+&lt;h2 id=&quot;altri-tipi-di-diagramma&quot;&gt;Altri tipi di diagramma&lt;/h2&gt;
+
+&lt;p&gt;In questo post ho esplorato i diagrammi più semplici e (per quanto mi riguarda utili), ma sono ben più numerosi quelli che è possibile generare. Questo è l’elenco completo alla data di pubblicazione:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Flowchart&lt;/li&gt;
+  &lt;li&gt;Sequence Diagram&lt;/li&gt;
+  &lt;li&gt;Class Diagram&lt;/li&gt;
+  &lt;li&gt;State Diagram&lt;/li&gt;
+  &lt;li&gt;Entity Relationship Diagram&lt;/li&gt;
+  &lt;li&gt;User Journey&lt;/li&gt;
+  &lt;li&gt;Gantt&lt;/li&gt;
+  &lt;li&gt;Pie Chart&lt;/li&gt;
+  &lt;li&gt;Quadrant Chart&lt;/li&gt;
+  &lt;li&gt;Requirement Diagram&lt;/li&gt;
+  &lt;li&gt;Gitgraph (Git) Diagram&lt;/li&gt;
+  &lt;li&gt;C4C Diagram (Context) Diagram&lt;/li&gt;
+  &lt;li&gt;Mindmaps&lt;/li&gt;
+  &lt;li&gt;Timeline&lt;/li&gt;
+  &lt;li&gt;Zenuml&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;conclusioni&quot;&gt;Conclusioni&lt;/h2&gt;
+
+&lt;p&gt;Mermaid non è una libreria “perfetta”, sono molti i bug ancora aperti elencati sulla pagina di GitHub, ma è una alternativa validissima per un utilizzo &lt;em&gt;leggero&lt;/em&gt; di queste funzionalità e soprattutto è un progetto attivo con push molto frequenti.&lt;/p&gt;
+
+&lt;p&gt;Per utilizzare Mermaid sul vostro PC, con un editor, si può sfruttare Visual Studio Code e l’apposito plugin, oppure, come faccio io, l’editor markdown modulare e scriptabile QOwnNotes. Non ho trovato plugin per Notepad++, purtroppo.&lt;/p&gt;
+
+&lt;p&gt;Per appronfondire ti lascio il link al sito ufficiale di Mermaid, dove è possibile trovare tutte le informazioni per iniziare subito ad usarla, in modo totalmente gratuito: &lt;a href=&quot;https://mermaid.js.org/&quot;&gt;mermaid.js.org&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Sun, 11 Jun 2023 00:00:00 +0200</pubDate>
+        <link>https://77nn.it/2023/06/11/Mermaid-Digrammi-Markdown.html</link>
+        <guid isPermaLink="true">https://77nn.it/2023/06/11/Mermaid-Digrammi-Markdown.html</guid>
+        
+        <category>plain</category>
+        
+      </item>
+      
     
      
       <item>
@@ -196,7 +380,7 @@
         <link>https://77nn.it/2023/05/16/Tabelle-Dati-Testo-semplice.html</link>
         <guid isPermaLink="true">https://77nn.it/2023/05/16/Tabelle-Dati-Testo-semplice.html</guid>
         
-        <category>tech</category>
+        <category>plain</category>
         
       </item>
       
@@ -552,7 +736,7 @@ TEMP=hex(2):22,00,43,00,3a,00,5c,00,[e una lunga sequenza di valori esadecimali]
         <link>https://77nn.it/2023/04/24/Plain-text-rocks.html</link>
         <guid isPermaLink="true">https://77nn.it/2023/04/24/Plain-text-rocks.html</guid>
         
-        <category>tech</category>
+        <category>plain</category>
         
       </item>
       

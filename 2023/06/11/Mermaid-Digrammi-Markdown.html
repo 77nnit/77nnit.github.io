@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="it" prefix="og: https://ogp.me/ns#">
+  <head>
+    <title>Diagrammi di ogni tipo grazie a Mermaid</title>  
+    <link rel="stylesheet" href="https://77nn.it/assets/css/styles.css">
+  
+    <!-- META TAGS -->
+    <meta charset="utf-8">
+    <meta name="description" content="Mermaid: come disegnare diagrammi complessi di ogni tipo descrivendoli in testo semplice">
+    <meta name="keywords" content="Mermaid, Markdown, Diagram, SVG, Disegno, Visio, FlowChart, Sequence, Class, State, Entity, Relationship, Gantt, Pie, Quadrant, Requirements, plaintext, ASCII, Unicode">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- MICROFORMATS METADATA -->
+    <meta property="og:title" content="Diagrammi di ogni tipo grazie a Mermaid" />
+    <meta property="og:description" content="Mermaid: come disegnare diagrammi complessi di ogni tipo descrivendoli in testo semplice" />
+    <meta property="og:image" content="https://77nn.it/assets/images/misc/Mermaid-Live-Edit.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://77nn.it/2023/06/11/Mermaid-Digrammi-Markdown.html" /> 
+    <meta property="og:site_name" content="77nn.it" />
+    <meta property="article:author" content ="https://77nn.it/autore.html">
+    <meta property="article:tag" content = "Mermaid, Markdown, Diagram, SVG, Disegno, Visio, FlowChart, Sequence, Class, State, Entity, Relationship, Gantt, Pie, Quadrant, Requirements, plaintext, ASCII, Unicode">
+    <meta property="article:section" content = "plain">
+    <meta property="profile:first_name" content="Michele" />
+    <meta property="profile:last_name" content="Brami" />
+    <meta property="profile:username" content="TiTiNoNero" /> 
+    <meta name="theme-color" content="#fafafa">
+
+    <!-- LINK TAGS -->
+    <link rel="alternate" type="application/rss+xml" href="https://77nn.it/feed.xml" />
+    <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+    <link rel="icon" href="/assets/images/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/assets/images/icon.png">
+    <link rel="canonical" href="https://77nn.it/2023/06/11/Mermaid-Digrammi-Markdown.html" />
+
+    <script language="javascript" type="text/javascript" src="/assets/js/lib/p5.min.js"></script>
+  <script language="javascript" type="text/javascript" src="/assets/js/77nn-logo.js"></script>
+  </head>
+
+  <body>
+    <time class="dt-modified" datetime="2023-06-11T22:42:52+02:00" itemprop="dateModified"></time>
+    <div class="overflow"><header>
+<div class="header">
+    <div class= "siteTitle" id="77nn-logo">
+        <!-- 77nn.it -->
+    </div>
+    <div class= "siteDescription">
+        <p>TiTiNoNero dice cose<span class="blink">_</span></p>
+    </div>
+<div class= "siteTitle">
+
+    </div>
+</div>
+<div  class= "announcements" >
+       <p>Blog su social, scienza, tecnologia, etica e privacy. Buona lettura!</p>
+    </div>
+</header>
+ <nav class="menucontainer">
+    <a href="/"  class="menuitem" tabindex ="0">
+        <img src= /assets/images/home.svg class="menuicon" alt="Pixelated-style icon representing a home with pointy roof"/>
+        <div class="menucaption">Home</div>
+    </a>
+    <a href="/blog.html"  class="menuitem" tabindex ="0">
+        <img src= /assets/images/blog.svg class="menuicon" alt="Pixelated-style icon representing a screen with some text on it"/>
+        <div class="menucaption">Blog</div>
+    </a>
+    <a href="/manifesto.html"  class="menuitem" tabindex ="0">
+        <img src= /assets/images/about.svg class="menuicon" alt="Pixelated-style icon representing a circled letter 'i' as in 'info'"/>
+        <div class="menucaption">Info</div>
+    </a>
+    <span class="menuitem void" tabindex="-1"></span>
+</nav>                       
+
+      <div class="pagecontainer">
+        <div class="content">  <main>
+  <article class="h-entry e-content">
+    <h1 class="p-name">Diagrammi di ogni tipo grazie a Mermaid</h1>
+    <div class="post-meta">
+      <div class="meta">
+        <time class="post-date dt-published">2023-06-11</time>
+      </div>
+      <div class="meta">   
+        <span class ="tag cyan p-category"> plain </span>  
+      </div>
+      <div class="meta">
+        <span>~5 min.</span>
+      </div>
+      <div class ="meta">
+        <span><a rel="bookmark" href="https://77nn.it" title="" style="font-size: 0.9em;">PERMALINK</a></span>
+      </div>
+     </div>
+    <p>Da tempo ho iniziato una personale crociata “non cruenta” per rivalutare, sostenere e promuovere l’utilizzo del <strong>plaintext</strong> come strumento di lavoro versatile e completo; ne ho parlato la prima volta nel post <a href="/2023/04/24/Plain-text-rocks.html">Plain Text Rocks</a> e ho poi esplorato la creazione di tabelle in <a href="/2023/05/16/Tabelle-Dati-Testo-semplice.html">Tabelle e dati in testo semplice</a>… con questo post ho deciso di inaugurare ufficialmente una sezione dedicata del blog con la tag <strong>plain</strong>!</p>
+
+<p>In questo post volevo presentarti un argomento che ha sempre a che fare con il microcosmo del <strong>testo semplice</strong>, ovvero come riuscire a generare <strong>diagrammi grafici</strong> di ogni genere a partire da un set di definizioni formali puramente testuali.</p>
+
+<p>Lo strumento che utilizzerò, e che ho anche integrato su questo sito, si chiama <strong>Mermaid</strong>, ed è pubblicato con licenza <em>MIT</em> su Github a questo indirizzo <a href="https://github.com/mermaid-js/mermaid">https://github.com/mermaid-js/mermaid</a>. È un tool maturo ed eccezionale per disegnare e pubblicare diagrammi vettoriali senza utilizzare un editor come Visio, semplicemente descrivendo le entità e le relazioni che le legano con una sintassi tutt’altro che complicata.</p>
+
+<p>Mermaid può essere utilizzato <em>online</em> con un <a href="https://mermaid.live/"><strong>Live-Editor</strong></a>, oppure lo possiamo trovare già integrato su numerose piattaforme, GitHub, GitLab, Wordpress, Google Docs, o come plugin per svariate applicazioni come ad esempio VSCode, Sublime Text e VIM. Io ho installato un plugin per consentire al mio sito, basato su <em>Jekyll</em>, di interpretare la sintassi di Mermaid inserita all’interno di un file <strong>markdown</strong> e generare i relativi diagrammi.</p>
+
+<p>Ovviamente è possibile fare un uso ben più avanzato di questa libreria; è possibile definire funzioni di callback su eventi generati sugli elementi <strong>SVG</strong> che costituiscono i diagrammi generati e associare stili <em>CSS</em> specifici. Non pare che ci sia la possibilità, allo stato attuale, di animare i grafici in alcun modo, se non con tanta pazienza e olio di gomito.</p>
+
+<h2 id="pie-chart">Pie Chart</h2>
+<p>il <strong>Pie Chart</strong>, o <strong>diagramma a torta</strong>, è un diagramma adatto a mostrare il rapporto tra le parti e l’intero. È forse il diagramma più semplice che Mermaid è in grado di gestire. In questo caso la sintassi è molto semplice: basta inserire il titolo ed elencare le coppie <em>chiave-valore</em> separate da “:”. I colori sono personalizzabili utilizzando semplice CSS.</p>
+
+<p>Questo è il codice necessario per la generazione:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  pie title Grafico a torta dei miei text editor preferiti
+    "Notepad++": 48
+    "Xed": 42
+    "QOwnNotes": 33
+    "VSCode": 24
+    "Quillpad": 14
+    "Other": 5
+</code></pre></div></div>
+
+<script src="https://77nn.it/assets/js/lib/mermaid.min.js"></script>
+<div class="mermaid">
+  pie title Grafico a torta dei miei text editor preferiti
+    "NPP": 48
+    "Xed": 42
+    "QON": 33
+    "VSCode": 24
+    "QPad": 14
+    "Other": 5
+</div>
+
+<h2 id="flow-chart">Flow Chart</h2>
+
+<p>il secondo esempio è un <strong>flow-chart</strong>, cioè un diagramma che serve a descrivere il flusso di un processo o una procedura. Questo diagramma è costituito da nodi e connessioni. In base alla forma dei nodi o delle connessioni si possono descrivere flussi condizionali, processi, input e output, come indicato dallo standard più recente pubblicato nel 1985 da ISO <a href="https://www.iso.org/standard/11955.html">ISO 5807:1985</a>.</p>
+
+<p>Nel nostro esempio abbiamo utilizzato la <a href="https://mermaid.js.org/intro/n00b-syntaxReference.html">sintassi di Mermaid</a> seguente, che definisce i singoli nodi (con una ID, un testo e le parentesi che indicano la forma), e subito dopo realizza le connessioni (anch’esse definite con una etichetta, uno stile di freccia e uno di linea).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: Esempio di FlowChart con Mermaid
+---
+flowchart TB
+  S1(((START)))
+  P11(Process1-1)
+  D11{Decision1-1}
+  P12(Process1-2)
+  P13(Process1-3)
+  P14(Process1-4)
+  E1(((END)))
+  S1--&gt;P11--&gt;D11--Condition 1--&gt;P12--&gt;E1
+  D11--Condition 3--&gt;P14-.-&gt;P12
+  D11--Condition 2--&gt;P13--Loop--&gt;P11
+</code></pre></div></div>
+
+<script src="https://77nn.it/assets/js/lib/mermaid.min.js"></script>
+<div class="mermaid">
+---
+title: Esempio di FlowChart con Mermaid
+---
+flowchart LR
+  S1(((START)))
+  P11(Process1-1)
+  D11{Decision1-1}
+  P12(Process1-2)
+  P13(Process1-3)
+  P14(Process1-4)
+  E1(((END)))
+  S1--&gt;P11--&gt;D11--Condition 1--&gt;P12--&gt;E1
+  D11--Condition 3--&gt;P14-.-&gt;P12
+  D11--Condition 2--&gt;P13--Loop--&gt;P11
+</div>
+
+<h2 id="diagramma-gantt">Diagramma Gantt</h2>
+
+<p>Il secondo esempio è un <strong>diagramma Gantt</strong>, tipicamente utlizzato nel <em>project management</em> per tenere traccia delle <em>task</em> assegnate e del loro progresso nel tempo. Questo diagramma è costituito da una  o più sezioni di <em>attività</em>, ciascuna descritta con un identificativo, uno <em>stato</em>, una data di inizio o un vincolo rispetto a una o più altre attività e da una durata o data di fine.
+In questo caso il codice che viene interpretato è leggermente più complicato, ma si tratta in buona sostanza di una lista.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+title: Esempio di Diagramma di Gantt con Mermaid
+---
+gantt
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y-%m-%d
+    tickInterval 1day
+    title       Prova di diagramma Gantt
+    excludes    weekends
+    
+    section A section
+    Completed task           :active, des1, 2023-06-10,2023-06-11
+    Future task2             :des4, after des1, 12h
+
+    section Critical tasks
+    Completed task           :crit, done, 2023-06-11,12h
+    Implement feature 1      :crit, active, after des1, 6h
+    Create tests             :crit, active, 18h
+    Future task              :crit, 8h
+    Functionality added      :milestone, 2023-06-13, 0d
+
+    section Documentation
+    Describe Feature         :active, a1, after des4, 12h
+    Add another diagram      :doc1, after a1 , 6h
+
+    section Last section
+    Describe gantt syntax    :after doc1, 4h
+    Push to PRD              :3h
+</code></pre></div></div>
+<script src="https://77nn.it/assets/js/lib/mermaid.min.js"></script>
+<div class="mermaid">
+---
+title: Esempio di Diagramma di Gantt con Mermaid
+---
+gantt
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y-%m-%d
+    tickInterval 1day
+    title       Prova di diagramma Gantt
+    excludes    weekends
+    
+    section A section
+    Completed task           :active, des1, 2023-06-10,2023-06-11
+    Future task2             :des4, after des1, 12h
+
+    section Critical tasks
+    Completed task           :crit, done, 2023-06-11,12h
+    Implement feature 1      :crit, active, after des1, 6h
+    Create tests             :crit, active, 18h
+    Future task              :crit, 8h
+    Functionality added      :milestone, 2023-06-13, 0d
+
+    section Documentation
+    Describe Feature         :active, a1, after des4, 12h
+    Add another diagram      :doc1, after a1 , 6h
+
+    section Last section
+    Describe gantt syntax    :after doc1, 4h
+    Push to PRD              :3h
+</div>
+
+<h2 id="altri-tipi-di-diagramma">Altri tipi di diagramma</h2>
+
+<p>In questo post ho esplorato i diagrammi più semplici e (per quanto mi riguarda utili), ma sono ben più numerosi quelli che è possibile generare. Questo è l’elenco completo alla data di pubblicazione:</p>
+
+<ul>
+  <li>Flowchart</li>
+  <li>Sequence Diagram</li>
+  <li>Class Diagram</li>
+  <li>State Diagram</li>
+  <li>Entity Relationship Diagram</li>
+  <li>User Journey</li>
+  <li>Gantt</li>
+  <li>Pie Chart</li>
+  <li>Quadrant Chart</li>
+  <li>Requirement Diagram</li>
+  <li>Gitgraph (Git) Diagram</li>
+  <li>C4C Diagram (Context) Diagram</li>
+  <li>Mindmaps</li>
+  <li>Timeline</li>
+  <li>Zenuml</li>
+</ul>
+
+<h2 id="conclusioni">Conclusioni</h2>
+
+<p>Mermaid non è una libreria “perfetta”, sono molti i bug ancora aperti elencati sulla pagina di GitHub, ma è una alternativa validissima per un utilizzo <em>leggero</em> di queste funzionalità e soprattutto è un progetto attivo con push molto frequenti.</p>
+
+<p>Per utilizzare Mermaid sul vostro PC, con un editor, si può sfruttare Visual Studio Code e l’apposito plugin, oppure, come faccio io, l’editor markdown modulare e scriptabile QOwnNotes. Non ho trovato plugin per Notepad++, purtroppo.</p>
+
+<p>Per appronfondire ti lascio il link al sito ufficiale di Mermaid, dove è possibile trovare tutte le informazioni per iniziare subito ad usarla, in modo totalmente gratuito: <a href="https://mermaid.js.org/">mermaid.js.org</a>.</p>
+
+
+  </article>
+</section>
+</main>
+
+</div>
+      </div><footer>
+<div class="footerContainer h-card">
+  <span class="span77nn"><a class="u-url" href="https://77nn.it">77nn.it</a></span> è scritto e pubblicato da <span class="p-name" rel="author">Michele Brami</span>. <a rel="license" href="https://77nn.it/legale.html">Tutti i diritti riservati.</a><br>
+Se ti piacciono i miei contenuti puoi <a href="https://ko-fi.com/titinonero">offrirmi un caffé!</a><br>
+<br>
+<a rel="me" href="https://mastodon.uno/@titinoNero">Collegati con me su Mastodon!</a> - <a rel="noopener" href = "https://77nn.it/feed.xml" target="_blank" download="77nn-feed.xml" tabindex = "0"><span>RSS feed </span><img class = "rss-icon" src="https://77nn.it/assets/images/rss.svg" alt="Pixelated style icon representing RSS feed logo"/></a>
+</div>
+</footer>
+
+    </div>
+     
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "BlogPosting",
+        "@id": "https://77nn.it/2023/06/11/Mermaid-Digrammi-Markdown.html",
+        "mainEntityOfPage": "https://77nn.it/2023/06/11/Mermaid-Digrammi-Markdown.html",
+        "headline": "Diagrammi di ogni tipo grazie a Mermaid",
+        "description": "Mermaid: come disegnare diagrammi complessi di ogni tipo descrivendoli in testo semplice",
+        "datePublished": "2023-06-11T00:00:00+02:00",
+        "dateModified": "2023-06-11T22:42:52+02:00",
+        "author": {
+            "@type": "Person",
+            "@id": "https://77nn.it/autore.html",
+            "name": "Michele Brami",
+            "url": "https://77nn.it/autore.html"
+        },
+        "image": {
+            "@type": "ImageObject",
+            "@id": "",
+            "url": "",
+            "height": "362",
+            "width": "388"
+        },
+        "url": "https://77nn.it/2023/06/11/Mermaid-Digrammi-Markdown.html",
+        "isPartOf": {
+            "@type" : "Blog",
+             "@id": "https://77nn.it/blog.html",
+             "name": "TiTiNoNero dice cose"
+        }
+    }
+    </script>
+   
+  </body>
+</html>

@@ -5,8 +5,8 @@
     <description>TiTiNoNero dice cose</description>
     <link>https://77nn.it/</link>
     <atom:link href="https://77nn.it/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Jun 2023 22:43:17 +0200</pubDate>
-    <lastBuildDate>Sun, 11 Jun 2023 22:43:17 +0200</lastBuildDate>
+    <pubDate>Thu, 22 Jun 2023 22:00:03 +0200</pubDate>
+    <lastBuildDate>Thu, 22 Jun 2023 22:00:03 +0200</lastBuildDate>
     
      
       <item>
@@ -487,10 +487,11 @@ gantt
 
 &lt;p&gt;Insomma, in questo luogo virtuale al limite dell’&lt;em&gt;esoterico&lt;/em&gt; vive e prospera una comunità reale che ormai supera i 6 milioni di utenti e che non ha interesse a &lt;em&gt;vendersi&lt;/em&gt; per qualche click, like o condivisione.&lt;/p&gt;
 
-&lt;p&gt;Per provare l’esperienza di Mastodon non servono applicazioni (anche se ce ne sono molte), basta un browser. Se ti va di provare, questo è un invito che ti permetterà di seguirmi automaticamente: &lt;a href=&quot;https://mastodon.uno/invite/v2eUbTBm&quot;&gt;https://mastodon.uno/invite/v2eUbTBm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Per provare l’esperienza di Mastodon non servono applicazioni (anche se ce ne sono molte), basta un browser, e il mio handle è in fondo ad ogni pagina di questo blog.&lt;/p&gt;
 
-&lt;p&gt;Ci vorrebbe un altro post per descrivere tutti i servizi di altissima qualità (tutti gratuiti) che accompagnano l’universo Mastodon (in particolare quelli mantenuti dal team di Devol - link in fondo alla pagina). Ci sono piattaforme di collaborazione, di discussione, di streaming, di blogging, di condivisione foto (in stile Instagram), video (in stile Youtube), codice sorgente (in stile GitHub).
-Una moltidudine di servizi, possibili grazie agli sviluppatori di software &lt;em&gt;*open source&lt;/em&gt; e alla preparazione e competenza di un manipolo di volontari.&lt;/p&gt;
+&lt;p&gt;Ci vorrebbe un altro post per descrivere tutti i servizi di altissima qualità (tutti gratuiti) che accompagnano l’universo Mastodon: ci sono piattaforme di collaborazione, di discussione, di streaming, di blogging, di condivisione foto (in stile Instagram), video (in stile Youtube), codice sorgente (in stile GitHub).&lt;/p&gt;
+
+&lt;p&gt;Una moltidudine di servizi, possibili grazie agli sviluppatori di software &lt;em&gt;*open source&lt;/em&gt; e alla preparazione e competenza di un manipolo di volontari.&lt;/p&gt;
 
 &lt;h2 id=&quot;sfide-e-opportunità&quot;&gt;Sfide e opportunità&lt;/h2&gt;
 
@@ -502,8 +503,6 @@ Una moltidudine di servizi, possibili grazie agli sviluppatori di software &lt;e
 
 &lt;ul&gt;
   &lt;li&gt;ActivityPub è un protocollo raccomandato e convalidato da W3C. &lt;a href=&quot;https://activitypub.rocks/&quot;&gt;https://activitypub.rocks/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Mastodon.uno è l’istanza Mastodon più gande d’Italia. Ma chi sono? &lt;a href=&quot;https://noblogo.org/unosocial/chi-siamo&quot;&gt;https://noblogo.org/unosocial/chi-siamo&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Devol è un gruppo di volontari appassionati e votati al web libero. &lt;a href=&quot;https://devol.it/&quot;&gt;devol.it&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;

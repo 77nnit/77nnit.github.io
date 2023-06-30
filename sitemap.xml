@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
+        <loc>https://77nn.it/2023/07/01/LinkedIn-ragioni-per-curare-account.html</loc>
+        <lastmod>2023-07-01T00:00:00+02:00</lastmod>
+        <image:image>
+            <image:loc>https://77nn.it/assets/images/misc/SarumIn.png</image:loc>
+        </image:image> 
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://77nn.it/2023/06/11/Mermaid-Digrammi-Markdown.html</loc>
         <lastmod>2023-06-11T00:00:00+02:00</lastmod>
         <image:image>
